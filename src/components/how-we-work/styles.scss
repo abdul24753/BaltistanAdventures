@@ -1,0 +1,116 @@
+.how-we-work-container {
+    h1,
+    h2,
+    h3 {
+      color: #1173d3;
+    }
+  
+    .anticon {
+      color: #1173d3;
+      font-size: 25px;
+    }
+    .basic-container {
+      height: 400px;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      padding-left: 10vw;
+  
+      h1,
+      h3 {
+        color: white;
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-card-meta-detail {
+      text-align: center;
+    }
+
+    .ant-card-meta-description {
+      text-align: center;
+    }
+   
+
+    .step-count-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            background: #1173d3;
+            border-radius: 50%;
+            /* border-radius: 28px; */
+            padding: -15px;
+            display: block;
+            width: 70px;
+            height: 70px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Roboto,sans-serif;
+            font-size: 55px;
+        }
+    }
+  
+    .information-container {
+      display: flex;
+      padding: 0 20%;
+      background: #f2f2f2;
+      .basic-information {
+        flex: 2;
+        .contact-information-item {
+          display: flex;
+          flex-direction: column;
+          padding: 0 25px;
+          margin-top: 20px;
+  
+          .label {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 0;
+          }
+  
+          .value {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+          }
+  
+          .ant-icon {
+            color: #1173d3;
+            font-size: 20px;
+          }
+        }
+  
+        .platforms-container {
+          margin-top: 40px;
+          display: flex;
+          flex: 1 1;
+          align-items: center;
+          justify-content: center;
+          .anticon {
+            color: #1173d3;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  
+    @media  screen and (max-width: 899px) {
+  
+      .basic-container{
+          padding-right: 30%;
+      }
+        .information-container{
+            padding: 0;
+        }
+  
+        .platforms-container{
+            justify-content: space-around;
+        }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+.ant-row {
+    padding: 0 10px;
+    // margin: 10px;
+  
+    .ant-card {
+      height: 100%;
+    }
+    .ant-card-cover {
+      height: 270px;
+      object-fit: contain;
+      // height: 100%;
+  
+      img {
+        height: inherit;
+      }
+    }
+  
+    .ant-card-meta-title {
+      white-space: break-spaces;
+    }
+  }
+  

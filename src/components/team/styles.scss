@@ -1,0 +1,35 @@
+.teams-container {
+    background:#ddd;
+    padding: 20px 0;
+  .ant-row {
+    margin: 10px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card-container {
+    .ant-card-body {
+      padding: 24px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        flex-direction: column;
+      }
+
+      .ant-card-meta-detail {
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+  }
+}

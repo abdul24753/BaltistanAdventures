@@ -1,8 +1,7 @@
 .flip-card {
   background-color: transparent;
   width: 100%;
-  // height: 540px;
-  min-height: 475px;
+  height: 100%;
   perspective: 1000px;
 
   .ant-card {
@@ -15,6 +14,34 @@
 
     img {
       height: inherit;
+    }
+  }
+
+  .ant-card-body {
+    height: calc(100% - 320px);
+  }
+
+  .ant-card-actions {
+    padding: 0 30px;
+
+    a{
+      background-color: #40a9ff;
+    color: white !important;
+    padding: 7px;
+    border-radius: 4px;
+    }
+
+    .ant-btn {
+      border-radius: 5px;
+
+      a{
+        color: white;
+      }
+    }
+    
+    .ant-btn-primary:active {
+      background-color:#40a9ff;
+      color: white;
     }
   }
 
@@ -38,9 +65,20 @@
   }
 
   .flip-card-back {
-    background-color: #2980b9;
+    background-color: #f4f4f4;
     color: white;
     transform: rotateY(180deg);
+
+    .go-back-container {
+      font-size: 30px;
+      padding: 5px;
+      position: fixed;
+      right: 17px;
+      top: 15px;
+      border-radius: 30%;
+      border: 3px solid;
+      cursor: pointer;
+    }
   }
 
   .flip-card-front,
@@ -52,18 +90,44 @@
     backface-visibility: hidden;
   }
 
-  
-@media screen and (max-width: 899px) {
-  .ant-card-meta-description {
-    color: rgba(0, 0, 0, 0.45);
-    line-height: 1;
-    font-size: 12px;
-    text-align: justify;
-  }
+  @media screen and (max-width: 899px) {
+    .ant-card-meta-description {
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 1;
+      font-size: 12px;
+      text-align: justify;
+    }
 
-  .flip-card{
-    height: 400px;
+    .flip-card {
+      height: 400px;
+    }
+
+    // .flip-card-back {
+    //   .go-back-container {
+    //     font-size: 14px;
+    //     border: 2px solid;
+    //     padding: 0px;
+    //     position: fixed;
+    //     right: 8px;
+    //     top: 4px;
+    //     color: rgb(214, 157, 157);
+    //     border-radius: 30%;
+    //   }
+
+    //   .detail-container {
+    //     padding-top: 24px;
+    //     h1 {
+    //       font-size: 19px;
+    //       color: darkblue;
+    //       border-bottom: 1px solid;
+    //     }
+
+    //     .description {
+    //       font-size: 14px;
+    //       color: rgba(0, 0, 0, 0.57);
+    //       border-bottom: none;
+    //     }
+    //   }
+    // }
   }
 }
-}
-

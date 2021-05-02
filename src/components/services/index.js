@@ -24,7 +24,8 @@ export const Services = () => {
         <h3>We have Some Exciting Offfers for you</h3>
         <h3>So What are you waiting for</h3>
       </div>
-      <Row gutter={[16, 20]}>
+      {/* <Row gutter={[16, 20]} type={"flex"}> */}
+        <div className="card-container">
         <Col xs={24} sm={24} md={8} lg={8} xl={8}>
           <CardContainer
             title={"Jeep Drive In Sarfaranga Dessert"}
@@ -89,7 +90,8 @@ thrilling dessert safari of Sarfaranga Cold Desert.`}
             }
           />
         </Col>
-      </Row>
+        </div>
+      {/* </Row> */}
     </div>
   );
 };

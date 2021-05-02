@@ -8,6 +8,19 @@
     object-fit: contain;
   }
 
+  .card-container{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    .ant-col {
+      height: inherit;
+    }
+  }
+
   .label{
     background: dimgray;
     margin-bottom: 10px;

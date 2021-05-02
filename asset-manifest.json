@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/BaltistanAdventures/static/css/main.0f408f8a.chunk.css",
+    "main.js": "/BaltistanAdventures/static/js/main.5662e41c.chunk.js",
+    "main.js.map": "/BaltistanAdventures/static/js/main.5662e41c.chunk.js.map",
+    "runtime-main.js": "/BaltistanAdventures/static/js/runtime-main.d06b4f77.js",
+    "runtime-main.js.map": "/BaltistanAdventures/static/js/runtime-main.d06b4f77.js.map",
+    "static/css/2.79c08235.chunk.css": "/BaltistanAdventures/static/css/2.79c08235.chunk.css",
+    "static/js/2.1c29a302.chunk.js": "/BaltistanAdventures/static/js/2.1c29a302.chunk.js",
+    "static/js/2.1c29a302.chunk.js.map": "/BaltistanAdventures/static/js/2.1c29a302.chunk.js.map",
+    "static/js/3.b666f21d.chunk.js": "/BaltistanAdventures/static/js/3.b666f21d.chunk.js",
+    "static/js/3.b666f21d.chunk.js.map": "/BaltistanAdventures/static/js/3.b666f21d.chunk.js.map",
+    "index.html": "/BaltistanAdventures/index.html",
+    "static/css/2.79c08235.chunk.css.map": "/BaltistanAdventures/static/css/2.79c08235.chunk.css.map",
+    "static/css/main.0f408f8a.chunk.css.map": "/BaltistanAdventures/static/css/main.0f408f8a.chunk.css.map",
+    "static/js/2.1c29a302.chunk.js.LICENSE.txt": "/BaltistanAdventures/static/js/2.1c29a302.chunk.js.LICENSE.txt",
+    "static/media/DSC_0616_lg.d21a81b0.jpg": "/BaltistanAdventures/static/media/DSC_0616_lg.d21a81b0.jpg",
+    "static/media/Services.ad781c03.png": "/BaltistanAdventures/static/media/Services.ad781c03.png",
+    "static/media/a-spin-to-the-desert.0ac015ff.jpg": "/BaltistanAdventures/static/media/a-spin-to-the-desert.0ac015ff.jpg",
+    "static/media/asif_mehdi.1b1dce9c.jpeg": "/BaltistanAdventures/static/media/asif_mehdi.1b1dce9c.jpeg",
+    "static/media/contact.16972a14.PNG": "/BaltistanAdventures/static/media/contact.16972a14.PNG",
+    "static/media/how-we-work.75fdefb8.jpg": "/BaltistanAdventures/static/media/how-we-work.75fdefb8.jpg",
+    "static/media/jeep-service.e9fe5b1a.jpg": "/BaltistanAdventures/static/media/jeep-service.e9fe5b1a.jpg",
+    "static/media/jeep.b579261a.jpg": "/BaltistanAdventures/static/media/jeep.b579261a.jpg",
+    "static/media/jeep_1.2bbaf66a.jpg": "/BaltistanAdventures/static/media/jeep_1.2bbaf66a.jpg",
+    "static/media/jeep_2.f1f51416.jpg": "/BaltistanAdventures/static/media/jeep_2.f1f51416.jpg",
+    "static/media/liaqat.8906c737.jpeg": "/BaltistanAdventures/static/media/liaqat.8906c737.jpeg",
+    "static/media/logo.66405650.PNG": "/BaltistanAdventures/static/media/logo.66405650.PNG",
+    "static/media/team.bf9b4809.jpg": "/BaltistanAdventures/static/media/team.bf9b4809.jpg",
+    "static/media/yasir.d5fdab4b.jpeg": "/BaltistanAdventures/static/media/yasir.d5fdab4b.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d06b4f77.js",
+    "static/css/2.79c08235.chunk.css",
+    "static/js/2.1c29a302.chunk.js",
+    "static/css/main.0f408f8a.chunk.css",
+    "static/js/main.5662e41c.chunk.js"
+  ]
+}

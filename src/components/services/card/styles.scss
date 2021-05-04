@@ -1,8 +1,33 @@
-.flip-card {
-  background-color: transparent;
-  width: 100%;
+.services-card-container {
   height: 100%;
-  perspective: 1000px;
+
+  .service-title{
+    font-size: 24px;
+    color:rgba(0, 0, 0, 0.67);
+    text-align: center;
+
+
+  }
+
+  .service-title::first-letter{
+    font-size: 36px;
+    color: red
+  }
+
+  .service-title::after {
+    border-bottom: 1px solid #ccc;
+    color: #dd3333;
+    content: "*";
+    display: flex;
+    font-family: fontawesome;
+    font-size: 27px;
+    height: 0;
+    line-height: 0.3;
+    margin: 18px auto 5px;
+    padding: 0;
+    width: 60%;
+    justify-content: center;
+  }
 
   .ant-card {
     height: 100%;
@@ -24,70 +49,29 @@
   .ant-card-actions {
     padding: 0 30px;
 
-    a{
-      background-color: #40a9ff;
-    color: white !important;
-    padding: 7px;
-    border-radius: 4px;
+    a {
+      background-color: red;
+      color: white !important;
+      padding: 7px;
+      border-radius: 4px;
     }
 
     .ant-btn {
       border-radius: 5px;
 
-      a{
+      a {
         color: white;
       }
     }
-    
+
     .ant-btn-primary:active {
-      background-color:#40a9ff;
+      background-color: #40a9ff;
       color: white;
     }
   }
 
   .ant-card-meta-title {
     white-space: break-spaces;
-  }
-
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-
-  .flip-card-back {
-    background-color: #f4f4f4;
-    color: white;
-    transform: rotateY(180deg);
-
-    .go-back-container {
-      font-size: 30px;
-      padding: 5px;
-      position: fixed;
-      right: 17px;
-      top: 15px;
-      border-radius: 30%;
-      border: 3px solid;
-      cursor: pointer;
-    }
-  }
-
-  .flip-card-front,
-  .flip-card-back {
-    // position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
   }
 
   @media screen and (max-width: 899px) {
@@ -101,33 +85,5 @@
     .flip-card {
       height: 400px;
     }
-
-    // .flip-card-back {
-    //   .go-back-container {
-    //     font-size: 14px;
-    //     border: 2px solid;
-    //     padding: 0px;
-    //     position: fixed;
-    //     right: 8px;
-    //     top: 4px;
-    //     color: rgb(214, 157, 157);
-    //     border-radius: 30%;
-    //   }
-
-    //   .detail-container {
-    //     padding-top: 24px;
-    //     h1 {
-    //       font-size: 19px;
-    //       color: darkblue;
-    //       border-bottom: 1px solid;
-    //     }
-
-    //     .description {
-    //       font-size: 14px;
-    //       color: rgba(0, 0, 0, 0.57);
-    //       border-bottom: none;
-    //     }
-    //   }
-    // }
   }
 }

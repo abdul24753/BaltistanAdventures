@@ -52,9 +52,8 @@
   margin: 0;
 }
 
-
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 10px;
 }
 
@@ -64,4 +63,71 @@
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+}
+
+.main-heading {
+  margin: 13px 0;
+  .ant-typography {
+    text-align: center;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.67);
+    line-height: 1;
+  }
+
+  .ant-typography::first-letter {
+    color: red;
+    font-size: 36px;
+  }
+}
+
+.main-heading::after {
+  border-bottom: 1px solid #ccc;
+  color: #dd3333;
+  content: "*****";
+  display: flex;
+  font-family: fontawesome;
+  font-size: 27px;
+  height: 0;
+  line-height: 0.3;
+  margin: 18px auto 5px;
+  padding: 0;
+  width: 60%;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .main-heading {
+    margin-bottom: 30px;
+    .ant-typography {
+      font-size: 30px;
+    }
+
+    .ant-typography::first-letter {
+      font-size: 45px;
+    }
+  }
+
+  .main-heading::after {
+    width: 30%;
+    margin: 30px auto 5px;
+  }
+}
+
+.details-text {
+  margin-bottom: 20px;
+
+  .ant-typography {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .details-text {
+    margin-top: 15px;
+
+    .ant-typography {
+      font-size: 16px;
+    }
+  }
 }

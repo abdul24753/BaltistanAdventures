@@ -9,89 +9,50 @@ import {
   ApartmentOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
-import ContactUs from "./../../images/contact.PNG";
+import { Typography } from "antd";
+
+const { Title, Paragraph, Link } = Typography;
 
 export const Contact = () => {
   return (
     <div className="contact-us-container">
-      <div
-        className="basic-container"
-        style={{ backgroundImage: `url(${ContactUs})` }}
-      >
-        <div>
-          <h1>Contact Us</h1>
-          <h3>
-            We are here to assist you for exploring bueaty of GILGIT BALTISTAN
-          </h3>
-        </div>
+      <div className="main-heading">
+        <Title>{`Contact Us`}</Title>
       </div>
-      <div className="information-container">
-        <div className="basic-information">
-          <div className="contact-information-item">
-            <h3 className="label">Address</h3>
-            <ApartmentOutlined />
-
-            <h3 className="value">Desert Glamping Near Sam Sand Dunes Jaisalmer-345001</h3>
-          </div>
-          <div className="contact-information-item">
-            <h3 className="label">Phone</h3>
-            <PhoneOutlined />
-
-            <h3 className="value">+91 9828034521 / 9214434521</h3>
-          </div>
-          <div className="platforms-container">
-            <div>
-              <a
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/baltistanadventures/"
-                target="_blank"
-              >
-                <FacebookOutlined />
-              </a>
-            </div>
-            <div>
-              <a
-                rel="noopener noreferrer"
-                href="https://instagram.com/baltistan_adventures?igshid=q3yswgm7jxjc"
-                target="_blank"
-              >
-                <InstagramOutlined />
-              </a>
-            </div>
-            {/* <div>
-              <a
-                rel="noopener noreferrer"
-                href="https://twitter.com/mubasherlucman"
-                target="_blank"
-              >
-                <TwitterOutlined />
-              </a>
-            </div> */}
-            {/* <div>
-              <a
-                rel="noopener noreferrer"
-                href="http://wa.link/uw9ry2"
-                target="_blank"
-              >
-                <WhatsAppOutlined />
-              </a>
-             
-            </div> */}
-            {/* <div>
-              <a
-                rel="noopener noreferrer"
-                href="mailto:wadood816892@gmail.com"
-                target="_blank"
-              >
-                <MailOutlined />{" "}
-              </a>
-              
-            </div> */}
-          </div>
+      <div className="details-text">
+        <Paragraph>{` We are here to assist you for exploring bueaty of GILGIT BALTISTAN`}</Paragraph>
+      </div>
+      <div className="contact-platforms-container">
+        <div>
+        <div className="platform">
+          <Title level={3} className="platform-name" underline>{`Address:`}</Title>
+          <ApartmentOutlined className="platform-icon"/>
+          <Paragraph className="platform-value">{`Hussainabad Skardu, Pakistan`}</Paragraph>
+        </div>
+        <div className="platform">
+          <Title level={3} className="platform-name" underline>{`Mail:`}</Title>
+          <MailOutlined className="platform-icon" />
+          <Paragraph className="platform-value">{`baltistanAdventures@gmail.com`}</Paragraph>
+        </div>{" "}
+        <div className="platform">
+          <Title level={3} className="platform-name" underline>{`Facebook:`}</Title>
+          <FacebookOutlined  className="platform-icon"/>
+          {/* <Paragraph className="platform-value">{`https://www.facebook.com/baltistanadventures/`}</Paragraph> */}
+          <Link href="https://www.facebook.com/baltistanadventures"  target="_blank" underline className="platform-value link">
+         {`https://www.facebook.com/baltistanadventures`}
+    </Link>
+        </div>
+        <div className="platform">
+          <Title level={3} className="platform-name" underline>{`Instagram:`}</Title>
+          <InstagramOutlined  className="platform-icon"/>
+          <Link href="https://instagram.com/baltistan_adventures?igshid=q3yswgm7jxjc" target="_blank" underline className="platform-value link">
+         {`https://instagram.com/baltistan_adventures?igshid=q3yswgm7jxjc`}
+    </Link>
+          {/* <Paragraph className="platform-value">{`https://instagram.com/baltistan_adventures?igshid=q3yswgm7jxjc`}</Paragraph> */}
+        </div>
         </div>
       </div>
     </div>
-    
   );
 };
 

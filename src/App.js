@@ -10,7 +10,6 @@ import { Contact } from "./components/contact";
 // import { Prices } from "./components/prices";
 
 import Team from "./components/team";
-import HowWeWork from "./components/how-we-work";
 import AboutUs from "./components/about-us";
 import { BackTop } from "antd";
 import { CalculatorFilled, UpCircleOutlined } from "@ant-design/icons";

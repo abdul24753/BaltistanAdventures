@@ -1,34 +1,23 @@
-import Jeep from "./../../images/jeep.jpg";
-import Jeep_1 from "./../../images/jeep_1.jpg";
-import Jeep_2 from "./../../images/jeep_2.jpg";
-import Motor from "./../../images/motor.jpg";
-import Motor_1 from "./../../images/motor_1.jpg";
-import Motor_2 from "./../../images/motor_2.jpg";
-import Motor_3 from "./../../images/motor_3.jpg";
-import Motor_4 from "./../../images/motor_4.jpg";
-import Dirt from "./../../images/a-spin-to-the-desert.jpg";
-import Quad from "./../../images/DSC_0616_lg.jpg";
-import Paragliding from "./../../images/paragliding-service.jpg";
+import Paragliding from "./../../images/Paragliding.jpeg";
 
-
-
-// import Quad from "./../../images/quad-service.jpg";
+import DirtBike from "./../../images/DirtBike.jpeg";
+import ATVQuad from "./../../images/ATVQuad.jpeg";
+import All from "./../../images/All.jpeg";
 
 export const imagesConfig = [
   {
-    url: Jeep,
+    url: All,
   },
   {
-    url: Quad,
+    url: ATVQuad,
   },
   {
-    url: Dirt,
+    url: DirtBike,
   },
   {
     url: Paragliding,
   },
 
-  
   // {
   //   url: Motor,
   // },

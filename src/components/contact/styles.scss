@@ -1,86 +1,78 @@
 .contact-us-container {
-  h1,
-  h2,
-  h3 {
-    color: #1173d3;
-  }
+  background: black;
+  opacity: 0.7;
+  padding: 3% 0;
 
-  .anticon {
-    color: #1173d3;
-    font-size: 25px;
-  }
-  .basic-container {
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    padding-left: 10vw;
-
-    h1,
-    h3 {
+  .main-heading {
+    .ant-typography {
       color: white;
-      margin-bottom: 0;
+      opacity: 0.7;
     }
   }
 
-  .information-container {
+  .details-text {
+    .ant-typography {
+      color: white;
+      opacity: 0.7;
+    }
+  }
+
+  .contact-platforms-container {
     display: flex;
-    padding: 0 20%;
-    background: #f2f2f2;
-    .basic-information {
-      flex: 2;
-      .contact-information-item {
-        display: flex;
-        flex-direction: column;
-        padding: 0 25px;
-        margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    .platform {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 010px;
 
-        .label {
-          text-align: center;
-          font-size: 30px;
-          margin-bottom: 0;
-        }
-
-        .value {
-          text-align: center;
-          font-size: 20px;
-          color: black;
-        }
-
-        .ant-icon {
-          color: #1173d3;
-          font-size: 20px;
-        }
+      .link{
+        color: #1890ff
       }
 
-      .platforms-container {
-        margin-top: 40px;
-        display: flex;
-        flex: 1 1;
-        align-items: center;
-        justify-content: center;
+      .platform-name {
+        flex: 2;
+        color: white;
+        opacity: 0.7;
+        margin:0;
+      }
 
-       
-        .anticon {
-          color: #1173d3;
-          font-size: 40px;
+      .platform-icon {
+        flex: 1;
+        color: white;
+        opacity: 0.7;
+        margin:0;
+        font-size: 16px;
+
+      }
+
+      .platform-value {
+        flex: 6;
+        color: white;
+        opacity: 0.7;
+        margin:0
+
+      }
+    }
+
+    @media screen and (max-width: 899px) {
+      .platform {
+        padding: 0 3%;
+        .platform-name {
+          flex: 5;
+          font-size: 16px;
+        }
+
+        .platform-icon {
+          flex: 2;
+        }
+
+        .platform-value {
+          flex: 12;
+          word-break: break-all;
         }
       }
     }
-  }
-
-  @media  screen and (max-width: 899px) {
-
-    .basic-container{
-        padding-right: 30%;
-    }
-      .information-container{
-          padding: 0;
-      }
-
-      .platforms-container{
-          justify-content: space-around;
-      }
   }
 }

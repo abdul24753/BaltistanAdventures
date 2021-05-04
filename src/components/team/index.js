@@ -1,6 +1,5 @@
 import React from "react";
-import TeamImage from "./../../images/team.jpg";
-import { Card, Row, Col } from "antd";
+import { Card, Row, Col, Typography } from "antd";
 import Asif from "./../../images/asif_mehdi.jpeg";
 import Yasir from "./../../images/yasir.jpeg";
 import Liaqat from "./../../images/liaqat.jpeg";
@@ -8,61 +7,59 @@ import Liaqat from "./../../images/liaqat.jpeg";
 import "./styles.scss";
 const { Meta } = Card;
 
+const { Title, Paragraph } = Typography;
+
 export const OurTeam = () => {
   return (
     <div className="teams-container">
-      <img
+      {/* <img
         src={TeamImage}
         style={{ width: "100%",maxHeight: '400px', objectFit: "contain" }}
         alt="team"
-      />
-     
-        <Row gutter={16}>
-          <Col xs={24} sm={24} md={7} lg={7} xl={7}>
-            <div className="card-container">
-              <Card hoverable>
-                <img src={Liaqat} alt="team" />
+      /> */}
 
-                <Meta
-                  title="Liaqat"
-                  description="Manager of Baltistan Adventures"
-                />
-              </Card>
-            </div>
-          </Col>
-          <Col xs={24} sm={24} md={7} lg={7} xl={7}>
-            <div className="card-container">
-              <Card hoverable>
-                <img src={Asif} alt="team" />
+      <div className="main-heading">
+        <Title>{`Meet Our Trip Organizer`}</Title>
+      </div>
+      <div className="details-text">
+        <Paragraph>{`We have the best in the whole world that organizes the best trips for our clients and make their journeys life remembering.`}</Paragraph>
+      </div>
+      <Row gutter={16}>
+        <Col xs={24} sm={24} md={7} lg={7} xl={7}>
+          <div className="card-container">
+            <Card hoverable>
+              <img src={Liaqat} alt="team" />
 
-                <Meta
-                  title="Asif Mehdi"
-                  description="CoFounder of Baltistan Adventures"
-                />
-              </Card>
-            </div>
-          </Col>
+              <Meta
+                title="Mr. Liaqat"
+                description="Manager of Baltistan Adventures"
+              />
+            </Card>
+          </div>
+        </Col>
+        <Col xs={24} sm={24} md={7} lg={7} xl={7}>
+          <div className="card-container">
+            <Card hoverable>
+              <img src={Asif} alt="team" />
 
-          <Col xs={24} sm={24} md={7} lg={7} xl={7}>
-            <div className="card-container">
-              <Card hoverable>
-                <img src={Yasir} alt="team" />
+              <Meta
+                title="Mr. Asif Mehdi"
+                description="Chief Operating Officer"
+              />
+            </Card>
+          </div>
+        </Col>
 
-                <Meta title="Yasir" description="CEO of Baltistan Adventures" />
-                {/* <div>
-              <a
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/yasir.abbas.16144"
-                target="_blank"
-              >
-                <FacebookOutlined />
-              </a>
-              </div> */}
-              </Card>
-            </div>
-          </Col>
-        </Row>
-   
+        <Col xs={24} sm={24} md={7} lg={7} xl={7}>
+          <div className="card-container">
+            <Card hoverable>
+              <img src={Yasir} alt="team" />
+
+              <Meta title="Mr. Yasir" description="Chief Executive Officer" />
+            </Card>
+          </div>
+        </Col>
+      </Row>
     </div>
 
     // <h1>OurTeam</h1>

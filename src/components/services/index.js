@@ -1,13 +1,16 @@
 import React from "react-router";
-import { Row, Col } from "antd";
-import ServiceImage from "./../../images/Services.png";
+import { Col, Typography } from "antd";
 import CardContainer from "./card";
 import jeep from "./../../images/jeep-service.jpg";
-import quad from "./../../images/quad-service.jpg";
-import paragliding from "./../../images/paragliding-service.jpg";
-import Dirt from "./../../images/a-spin-to-the-desert.jpg";
+
+import Paragliding from "./../../images/Paragliding.jpeg";
+
+import DirtBike from "./../../images/DirtBike.jpeg";
+import ATVQuad from "./../../images/ATVQuad.jpeg";
 
 import "./styles.scss";
+
+const { Title, Paragraph } = Typography;
 
 export const Services = () => {
   return (
@@ -18,14 +21,21 @@ export const Services = () => {
         // style={{ width: "100%", height: "400px", objectFir: "contain" }}
         alt="services"
       /> */}
+      <div className="main-heading">
+        <Title>{`Explore The World`}</Title>
+      </div>
+      <div className="details-text">
+        <Paragraph>{`Come Explore the world with us and enjoy the best trip of your life. We offer Trips to every end of the world.`}</Paragraph>
+      </div>
 
-      <div className="label">
-        <h1>Our Services</h1><br />
+      {/* <div className="label">
+        <h1>Our Services</h1>
+        <br />
         <h3>We have Some Exciting Offfers for you</h3>
         <h3>So What are you waiting for</h3>
-      </div>
+      </div> */}
       {/* <Row gutter={[16, 20]} type={"flex"}> */}
-        <div className="card-container">
+      <div className="card-container">
         <Col xs={24} sm={24} md={8} lg={8} xl={8}>
           <CardContainer
             title={"Jeep Drive In Sarfaranga Dessert"}
@@ -41,7 +51,7 @@ Sarfaranga cold desert.`}
         <Col xs={24} sm={24} md={8} lg={8} xl={8}>
           <CardContainer
             title={"ATV Quad Drive In Sarfaranga Dessert"}
-            imgSrc={quad}
+            imgSrc={ATVQuad}
             descritpion={`ATV is a vehicle that travels on low-pressure tires, with a seat that is straddled by the operator,
             along with handlebars for steering control. It is designed to handle a wider variety of terrain
             than most other vehicles.
@@ -54,7 +64,7 @@ thrilling dessert safari of Sarfaranga Cold Desert.`}
         <Col xs={24} sm={24} md={8} lg={8} xl={8}>
           <CardContainer
             title={"Paramotorgliding In Himaliya Mountains"}
-            imgSrc={paragliding}
+            imgSrc={Paragliding}
             descritpion={
               <div>
                 Paramount gliding, also called a motorized parachute or
@@ -74,7 +84,7 @@ thrilling dessert safari of Sarfaranga Cold Desert.`}
         <Col xs={24} sm={24} md={8} lg={8} xl={8}>
           <CardContainer
             title={"Dirt Bike In Sarfaranga"}
-            imgSrc={Dirt}
+            imgSrc={DirtBike}
             descritpion={
               <div>
                 Dirt bikes are specially designed for off-road events. Compared
@@ -90,7 +100,7 @@ thrilling dessert safari of Sarfaranga Cold Desert.`}
             }
           />
         </Col>
-        </div>
+      </div>
       {/* </Row> */}
     </div>
   );

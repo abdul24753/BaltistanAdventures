@@ -12,12 +12,6 @@ const { Title, Paragraph } = Typography;
 export const OurTeam = () => {
   return (
     <div className="teams-container">
-      {/* <img
-        src={TeamImage}
-        style={{ width: "100%",maxHeight: '400px', objectFit: "contain" }}
-        alt="team"
-      /> */}
-
       <div className="main-heading">
         <Title>{`Meet Our Trip Organizer`}</Title>
       </div>
@@ -62,7 +56,6 @@ export const OurTeam = () => {
       </Row>
     </div>
 
-    // <h1>OurTeam</h1>
   );
 };
 

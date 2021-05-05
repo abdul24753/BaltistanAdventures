@@ -73,11 +73,6 @@
     color: rgba(0, 0, 0, 0.67);
     line-height: 1;
   }
-
-  .ant-typography::first-letter {
-    color: red;
-    font-size: 36px;
-  }
 }
 
 .main-heading::after {
@@ -100,10 +95,6 @@
     margin-bottom: 30px;
     .ant-typography {
       font-size: 30px;
-    }
-
-    .ant-typography::first-letter {
-      font-size: 45px;
     }
   }
 

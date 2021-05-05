@@ -4,45 +4,34 @@ import { Link } from "react-router-dom";
 import Logo from "./../../images/logo.PNG";
 import { MenuOutlined } from "@ant-design/icons";
 
-export const Topbar = ({
-  aboutUsRef,
-  servicesRef,
-  teamRef,
-  contactRef,
-}) => {
+export const Topbar = ({ aboutUsRef, servicesRef, teamRef, contactRef }) => {
   const [openMenu, setOpenMenu] = useState(null);
-  const [selected, setSelected] = useState(null);
 
   const topbarElements = [
     {
       id: "home",
       label: "Home",
-      url: "/",
       // ref: homeRef,
     },
     {
       id: "aboutUs",
       label: "About Us",
-      url: "/aboutUs",
       ref: aboutUsRef,
     },
     {
       id: "services",
       label: "Services",
-      url: "/services",
       ref: servicesRef,
     },
 
     {
       id: "team",
       label: "Team",
-      url: "/team",
       ref: teamRef,
     },
     {
       id: "contact",
       label: "Contact",
-      url: "/contact",
       ref: contactRef,
     },
   ];
@@ -71,9 +60,8 @@ export const Topbar = ({
       >
         {topbarElements.map((item) => (
           <div
-            className={`nav-bar--item ${selected === item.id && "selected"}`}
+            className={`nav-bar--item`}
             onClick={() => {
-              setSelected(item.id);
               item.ref && item.ref.current && item.ref.current.scrollIntoView();
               console.log(item.ref);
               if (openMenu) {

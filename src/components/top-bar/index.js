@@ -81,7 +81,7 @@ export const Topbar = ({
               }
             }}
           >
-            <Link to={item.id}>{item.label}</Link>
+            <Link>{item.label}</Link>
           </div>
         ))}
       </div>

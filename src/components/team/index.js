@@ -55,7 +55,6 @@ export const OurTeam = () => {
         </Col>
       </Row>
     </div>
-
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "antd/dist/antd.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Home } from "./components/home";
@@ -11,13 +11,29 @@ import AboutUs from "./components/about-us";
 import { BackTop } from "antd";
 import { UpCircleOutlined } from "@ant-design/icons";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
   const aboutUsRef = useRef(null);
   const servicesRef = useRef(null);
   const teamRef = useRef(null);
   const contactRef = useRef(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000);
+  }, []);
+
+  const renderLoader = () => {
+    return (
+      <div class="loadingContainer">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+      </div>
+    );
+  };
 
   const style = {
     height: 40,
@@ -28,44 +44,44 @@ function App() {
     color: "#fff",
     textAlign: "center",
     fontSize: 14,
-    opacity:0.7,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    opacity: 0.7,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   };
   return (
     <div className="main-container">
-      <Router>
-        <Topbar
-          aboutUsRef={aboutUsRef}
-          servicesRef={servicesRef}
-          teamRef={teamRef}
-          contactRef={contactRef}
-        />
-      
+      {loading && renderLoader()}
+      {!loading && (
+        <Router>
+          <Topbar
+            aboutUsRef={aboutUsRef}
+            servicesRef={servicesRef}
+            teamRef={teamRef}
+            contactRef={contactRef}
+          />
           <Home />
-      
-        <div ref={aboutUsRef}>
-          <AboutUs />
-        </div>
-        <div ref={servicesRef}>
-          <Services />
-        </div>
-     
+          <div ref={aboutUsRef}>
+            <AboutUs />
+          </div>
+          <div ref={servicesRef}>
+            <Services />
+          </div>
 
-        <div ref={teamRef}>
-          <Team />
-        </div>
+          <div ref={teamRef}>
+            <Team />
+          </div>
 
-        <div ref={contactRef}>
-          <Contact />
-        </div>
-        <BackTop>
-          <div style={style}><UpCircleOutlined /> </div>
-        </BackTop>
-
-       
-      </Router>
+          <div ref={contactRef}>
+            <Contact />
+          </div>
+          <BackTop>
+            <div style={style}>
+              <UpCircleOutlined />{" "}
+            </div>
+          </BackTop>
+        </Router>
+      )}
     </div>
   );
 }

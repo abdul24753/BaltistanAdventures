@@ -39,7 +39,7 @@ export const Services = () => {
             {" "}
           </rect>
           <text x={"50%"} y="60%" textAnchor={"middle"}>
-            Our Services
+            Services
           </text>
         </svg>
       </div>

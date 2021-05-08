@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Typography } from "antd";
 import "./styles.scss";
 import { MacCommandOutlined } from "@ant-design/icons";
-const {Title} =Typography
+const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 
 export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
@@ -21,7 +21,25 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
           </a>,
         ]}
       >
-        <Meta title={<div className="service-title"><Title level={3}>{title}</Title></div>} description={descritpion || "This is a text"} />
+        <Meta
+          title={
+            <div className="service-title">
+              <Title level={3}>{title}</Title>
+            </div>
+          }
+          description={
+            (
+              <Paragraph
+                ellipsis={{
+                  rows: 5,
+                  tooltip:true
+                }}
+              >
+                {descritpion}
+              </Paragraph>
+            ) || "This is a text"
+          }
+        />
       </Card>
     </div>
   );

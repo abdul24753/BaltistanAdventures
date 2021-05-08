@@ -1,6 +1,63 @@
 .about-us-container {
   padding: 5%;
   background: #eee;
+
+  .type-writer-effect {
+    .ant-typography {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      // letter-spacing: 0.15em; /* Adjust as needed */
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
+    }
+  }
+
+  .slide-from-left {
+    animation: left_to_right 3s ease;
+    text-align: center;
+
+    // .ant-typography{
+    //   text-align: right;
+    //   animation: left_to_right 3s ease;
+    // }
+    @keyframes left_to_right {
+      from {
+        transition: translate(-100px);
+      }
+      to {
+        margin-left: 0;
+      }
+    }
+    
+  }
+  
+  @keyframes right_to_left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0;
+    }
+  }
+  
+  
 }
-
-

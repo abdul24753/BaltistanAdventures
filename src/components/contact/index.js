@@ -1,4 +1,5 @@
-import React from "react-router";
+import React, { useEffect, useRef, useState } from "react";
+import OnScreen from "./../isInViewport";
 import "./styles.scss";
 import {
   FacebookOutlined,
@@ -14,9 +15,16 @@ import { Typography } from "antd";
 const { Title, Paragraph, Link } = Typography;
 
 export const Contact = () => {
+  const [visible, setVisible] = useState(false)
+  const ref = useRef();
+  var isVisible = OnScreen(ref);
+
+  useEffect(()=>{  
+    setVisible(isVisible)
+  },[isVisible])
   return (
     <div className="contact-us-container">
-      <div className="main-heading">
+      <div className={`main-heading ${visible && 'type-writer-effect'}`} ref={ref}>
         <Title>{`Contact Us`}</Title>
       </div>
       <div className="details-text">

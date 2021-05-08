@@ -1,6 +1,35 @@
 .teams-container {
   background: #eee;
   padding: 20px 0;
+
+  .type-writer-effect {
+    .ant-typography {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      // letter-spacing: 0.15em; /* Adjust as needed */
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
+    }
+  }
   .ant-row {
     margin: 10px;
     margin-left: 0 !important;
@@ -19,6 +48,7 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
+      overflow: hidden;
 
       img {
         // border-radius: 50%;
@@ -27,7 +57,11 @@
         object-fit: contain;
         flex-direction: column;
         border-radius: 4px;
+        overflow: hidden;
+
+      
       }
+
 
       .ant-card-meta-detail {
         overflow: hidden;
@@ -43,5 +77,13 @@
         font-size: 18px;
       }
     }
+    :hover{
+
+      img{
+      transform: scale(1.07);
+      margin-bottom: 20px;
+    }
+    }
+ 
   }
 }

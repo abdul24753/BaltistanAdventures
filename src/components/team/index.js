@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import OnScreen from "./../isInViewport";
 import { Card, Row, Col, Typography } from "antd";
-import Asif from "./../../images/asif_mehdi.jpeg";
-import Yasir from "./../../images/yasir.jpeg";
-import Liaqat from "./../../images/liaqat.jpeg";
+import Asif from "./../../images/asif_mehdi_3.jpeg";
+import Yasir from "./../../images/yasir_3.jpeg";
+import Liaqat from "./../../images/liaqat_3.jpeg";
 
 import "./styles.scss";
 const { Meta } = Card;
@@ -10,9 +11,17 @@ const { Meta } = Card;
 const { Title, Paragraph } = Typography;
 
 export const OurTeam = () => {
+
+  const [visible, setVisible] = useState(false)
+  const ref = useRef();
+  var isVisible = OnScreen(ref);
+
+  useEffect(()=>{  
+    setVisible(isVisible)
+  },[isVisible])
   return (
     <div className="teams-container">
-      <div className="main-heading">
+      <div className={`main-heading ${visible && 'type-writer-effect'}`} ref={ref}>
         <Title>{`Meet Our Trip Organizer`}</Title>
       </div>
       <div className="details-text">
@@ -21,7 +30,7 @@ export const OurTeam = () => {
       <Row gutter={16}>
         <Col xs={24} sm={24} md={7} lg={7} xl={7}>
           <div className="card-container">
-            <Card hoverable>
+            <Card bordered={true}>
               <img src={Liaqat} alt="team" />
 
               <Meta

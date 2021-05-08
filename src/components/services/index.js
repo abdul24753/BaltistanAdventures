@@ -1,12 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Col, Typography, Tabs } from "antd";
+import OnScreen from "./../isInViewport";
 import CardContainer from "./card";
-import jeep from "./../../images/jeep-service.jpg";
-
-import Paragliding from "./../../images/Paragliding.jpeg";
-
-import DirtBike from "./../../images/DirtBike.jpeg";
-import ATVQuad from "./../../images/ATVQuad.jpeg";
 import "./styles.scss";
 
 import serviceCards from "./helpers";
@@ -17,13 +12,18 @@ const { Title, Paragraph } = Typography;
 export const Services = () => {
   const [selCardType, setSelCardType] = useState("activities");
 
-  useEffect(() => {
-    console.log(selCardType);
-  });
+  const [visible, setVisible] = useState(false)
+  const ref = useRef();
+  var isVisible = OnScreen(ref);
+
+  useEffect(()=>{  
+    setVisible(isVisible)
+  },[isVisible])
+  
 
   const renderCardItem = (item) => {
     return (
-      <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+      <Col xs={24} sm={24} md={24} lg={8} xl={8}>
         <CardContainer
           title={item.title}
           imgSrc={item.img}
@@ -34,7 +34,7 @@ export const Services = () => {
   };
   return (
     <div className="services-container">
-      <div className="main-heading">
+      <div className={`main-heading ${visible && 'type-writer-effect'}`} ref={ref}>
         <Title>{`Explore The World`}</Title>
       </div>
       <div className="details-text">

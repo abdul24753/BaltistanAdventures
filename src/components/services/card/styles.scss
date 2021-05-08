@@ -28,17 +28,21 @@
     height: 100%;
   }
   .ant-card-cover {
-    height: 270px;
+    height: 195px;
     object-fit: contain;
-    // height: 100%;
+    overflow: hidden;
 
     img {
       height: inherit;
     }
+
+    :hover{
+        transform: scale(1.2);  
+    }
   }
 
   .ant-card-body {
-    height: calc(100% - 320px);
+    height: calc(100% - 250px);
   }
 
   .ant-card-actions {

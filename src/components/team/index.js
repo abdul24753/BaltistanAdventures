@@ -30,7 +30,7 @@ export const OurTeam = () => {
       <Row gutter={16}>
         <Col xs={24} sm={24} md={7} lg={7} xl={7}>
           <div className="card-container">
-            <Card bordered={true}>
+            <Card hoverable>
               <img src={Liaqat} alt="team" />
 
               <Meta

@@ -112,6 +112,7 @@
   padding: 0;
   width: 60%;
   justify-content: center;
+  margin-top:-35px;
 }
 
 @media screen and (min-width: 900px) {
@@ -125,6 +126,7 @@
   .main-heading::after {
     width: 30%;
     margin: 30px auto 5px;
+    margin-top:-35px;
   }
 }
 

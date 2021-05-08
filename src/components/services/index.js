@@ -12,14 +12,13 @@ const { Title, Paragraph } = Typography;
 export const Services = () => {
   const [selCardType, setSelCardType] = useState("activities");
 
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
   const ref = useRef();
   var isVisible = OnScreen(ref);
 
-  useEffect(()=>{  
-    setVisible(isVisible)
-  },[isVisible])
-  
+  useEffect(() => {
+    setVisible(isVisible);
+  }, [isVisible]);
 
   const renderCardItem = (item) => {
     return (
@@ -34,8 +33,15 @@ export const Services = () => {
   };
   return (
     <div className="services-container">
-      <div className={`main-heading ${visible && 'type-writer-effect'}`} ref={ref}>
-        <Title>{`Explore The World`}</Title>
+      <div className={`main-heading`} ref={ref}>
+        <svg width="100%" height="100%">
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)">
+            {" "}
+          </rect>
+          <text x={"50%"} y="60%" textAnchor={"middle"}>
+            Our Services
+          </text>
+        </svg>
       </div>
       <div className="details-text">
         <Paragraph>{`Come Explore the world with us and enjoy the best trip of your life. We offer Trips to every end of the world.`}</Paragraph>

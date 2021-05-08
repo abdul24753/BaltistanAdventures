@@ -24,8 +24,15 @@ export const Contact = () => {
   },[isVisible])
   return (
     <div className="contact-us-container">
-      <div className={`main-heading ${visible && 'type-writer-effect'}`} ref={ref}>
-        <Title>{`Contact Us`}</Title>
+      <div className={`main-heading`} ref={ref}>
+      <svg width="100%" height="100%">
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)">
+            {" "}
+          </rect>
+          <text x={"50%"} y="60%" textAnchor={"middle"}>
+            Contact Us
+          </text>
+        </svg>
       </div>
       <div className="details-text">
         <Paragraph>{` We are here to assist you for exploring bueaty of GILGIT BALTISTAN`}</Paragraph>

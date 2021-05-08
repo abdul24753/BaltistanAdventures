@@ -15,17 +15,8 @@ export const AboutUs = () => {
   return (
     <div className="about-us-container">
       <div className={`main-heading`} ref={ref}>
-        {/* <Title>{`About Us`}</Title> */}
-        <svg width="100%" height="100%">
-         
-        <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
-          
-
-          
+        <Title>{`About Us`}</Title>
         
-
-          <text  x={"50%"} y="60%" textAnchor={"middle"}>About Us</text>
-        </svg>
       </div>
       <div className={`details-text ${visible && "slide-from-left"}`}>
         <Text>

@@ -11,25 +11,17 @@ const { Meta } = Card;
 const { Title, Paragraph } = Typography;
 
 export const OurTeam = () => {
-
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
   const ref = useRef();
   var isVisible = OnScreen(ref);
 
-  useEffect(()=>{  
-    setVisible(isVisible)
-  },[isVisible])
+  useEffect(() => {
+    setVisible(isVisible);
+  }, [isVisible]);
   return (
     <div className="teams-container">
       <div className={`main-heading`} ref={ref}>
-      <svg width="100%" height="100%">
-          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)">
-            {" "}
-          </rect>
-          <text x={"50%"} y="60%" textAnchor={"middle"}>
-            Our Team
-          </text>
-        </svg>
+        <Title>Our Team</Title>
       </div>
       <div className="details-text">
         <Paragraph>{`We have the best in the whole world that organizes the best trips for our clients and make their journeys life remembering.`}</Paragraph>
@@ -38,12 +30,9 @@ export const OurTeam = () => {
         <Col xs={24} sm={24} md={7} lg={7} xl={7}>
           <div className="card-container">
             <Card hoverable>
-              <img src={Liaqat} alt="team" />
+              <img src={Yasir} alt="team" />
 
-              <Meta
-                title="Mr. Liaqat"
-                description="Manager of Baltistan Adventures"
-              />
+              <Meta title="Mr. Yasir" description="Chief Executive Officer" />
             </Card>
           </div>
         </Col>
@@ -63,9 +52,12 @@ export const OurTeam = () => {
         <Col xs={24} sm={24} md={7} lg={7} xl={7}>
           <div className="card-container">
             <Card hoverable>
-              <img src={Yasir} alt="team" />
+              <img src={Liaqat} alt="team" />
 
-              <Meta title="Mr. Yasir" description="Chief Executive Officer" />
+              <Meta
+                title="Mr. Liaqat"
+                description="Manager of Baltistan Adventures"
+              />
             </Card>
           </div>
         </Col>

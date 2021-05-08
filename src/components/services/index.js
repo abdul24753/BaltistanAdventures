@@ -34,14 +34,7 @@ export const Services = () => {
   return (
     <div className="services-container">
       <div className={`main-heading`} ref={ref}>
-        <svg width="100%" height="100%">
-          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)">
-            {" "}
-          </rect>
-          <text x={"50%"} y="60%" textAnchor={"middle"}>
-            Services
-          </text>
-        </svg>
+        <Title>{`Our Services`}</Title>
       </div>
       <div className="details-text">
         <Paragraph>{`Come Explore the world with us and enjoy the best trip of your life. We offer Trips to every end of the world.`}</Paragraph>

@@ -1,17 +1,11 @@
 import React, {  useRef } from "react";
-// import OnScreen from "./../isInViewport";
 import { Typography } from "antd";
 import "./styles.scss";
 const { Title, Text } = Typography;
 
 export const AboutUs = () => {
-  // const [visible, setVisible] = useState(false);
   const ref = useRef();
-  // var isVisible = OnScreen(ref);
-
-  // useEffect(() => {
-  //   setVisible(isVisible);
-  // }, [isVisible]);
+  
   return (
     <div className="about-us-container">
       <div className={`main-heading`} ref={ref}>

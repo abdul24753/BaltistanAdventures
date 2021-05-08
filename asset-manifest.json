@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/BaltistanAdventures/static/css/main.51d296ad.chunk.css",
-    "main.js": "/BaltistanAdventures/static/js/main.3222ee80.chunk.js",
-    "main.js.map": "/BaltistanAdventures/static/js/main.3222ee80.chunk.js.map",
+    "main.css": "/BaltistanAdventures/static/css/main.83211579.chunk.css",
+    "main.js": "/BaltistanAdventures/static/js/main.8275a29c.chunk.js",
+    "main.js.map": "/BaltistanAdventures/static/js/main.8275a29c.chunk.js.map",
     "runtime-main.js": "/BaltistanAdventures/static/js/runtime-main.7d049429.js",
     "runtime-main.js.map": "/BaltistanAdventures/static/js/runtime-main.7d049429.js.map",
     "static/css/2.79c08235.chunk.css": "/BaltistanAdventures/static/css/2.79c08235.chunk.css",
-    "static/js/2.e2171015.chunk.js": "/BaltistanAdventures/static/js/2.e2171015.chunk.js",
-    "static/js/2.e2171015.chunk.js.map": "/BaltistanAdventures/static/js/2.e2171015.chunk.js.map",
+    "static/js/2.c91f4d85.chunk.js": "/BaltistanAdventures/static/js/2.c91f4d85.chunk.js",
+    "static/js/2.c91f4d85.chunk.js.map": "/BaltistanAdventures/static/js/2.c91f4d85.chunk.js.map",
     "static/js/3.0ced10f3.chunk.js": "/BaltistanAdventures/static/js/3.0ced10f3.chunk.js",
     "static/js/3.0ced10f3.chunk.js.map": "/BaltistanAdventures/static/js/3.0ced10f3.chunk.js.map",
     "index.html": "/BaltistanAdventures/index.html",
     "static/css/2.79c08235.chunk.css.map": "/BaltistanAdventures/static/css/2.79c08235.chunk.css.map",
-    "static/css/main.51d296ad.chunk.css.map": "/BaltistanAdventures/static/css/main.51d296ad.chunk.css.map",
-    "static/js/2.e2171015.chunk.js.LICENSE.txt": "/BaltistanAdventures/static/js/2.e2171015.chunk.js.LICENSE.txt",
+    "static/css/main.83211579.chunk.css.map": "/BaltistanAdventures/static/css/main.83211579.chunk.css.map",
+    "static/js/2.c91f4d85.chunk.js.LICENSE.txt": "/BaltistanAdventures/static/js/2.c91f4d85.chunk.js.LICENSE.txt",
     "static/media/ATVQuad.6d52acd0.jpeg": "/BaltistanAdventures/static/media/ATVQuad.6d52acd0.jpeg",
     "static/media/All.183ccd2d.jpeg": "/BaltistanAdventures/static/media/All.183ccd2d.jpeg",
     "static/media/DirtBike.ed81195a.jpeg": "/BaltistanAdventures/static/media/DirtBike.ed81195a.jpeg",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.7d049429.js",
     "static/css/2.79c08235.chunk.css",
-    "static/js/2.e2171015.chunk.js",
-    "static/css/main.51d296ad.chunk.css",
-    "static/js/main.3222ee80.chunk.js"
+    "static/js/2.c91f4d85.chunk.js",
+    "static/css/main.83211579.chunk.css",
+    "static/js/main.8275a29c.chunk.js"
   ]
 }

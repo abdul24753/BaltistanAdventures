@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "./../../images/logo.PNG";
 import { MenuOutlined } from "@ant-design/icons";
 
-export const Topbar = ({ aboutUsRef, servicesRef, teamRef, contactRef }) => {
+export const Topbar = ({ aboutUsRef, servicesRef, teamRef, contactRef, galleryRef }) => {
   const [openMenu, setOpenMenu] = useState(null);
 
   const topbarElements = [
@@ -22,6 +22,11 @@ export const Topbar = ({ aboutUsRef, servicesRef, teamRef, contactRef }) => {
       id: "services",
       label: "Services",
       ref: servicesRef,
+    },
+    {
+      id: "gallery",
+      label: "Gallery",
+      ref: galleryRef,
     },
 
     {

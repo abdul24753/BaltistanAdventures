@@ -63,6 +63,7 @@ function App() {
             servicesRef={servicesRef}
             teamRef={teamRef}
             contactRef={contactRef}
+            galleryRef={galleryRef}
           />
           <Main />
           {/* <Home /> */}

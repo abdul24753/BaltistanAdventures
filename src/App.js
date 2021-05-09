@@ -22,7 +22,7 @@ function App() {
   const contactRef = useRef(null);
   const galleryRef = useRef(null);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 8000);

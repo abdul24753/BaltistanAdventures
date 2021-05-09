@@ -1,0 +1,48 @@
+.main-containerr {
+  position: relative;
+
+  img {
+    width: 100%;
+    max-height: calc(100vh - 70px);
+  }
+
+  .text-container {
+    position: absolute;
+    top: 30%;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .detail-container {
+      .detail {
+        font-size: 35px;
+        margin: 0;
+        margin-top: 5px !important;
+        text-align: center;
+      }
+    }
+    .ant-typography {
+      font-family: "Playfair Display";
+      color: lightyellow;;
+      margin: 0;
+      line-height: 1;
+    }
+    .heading {
+      font-size: 58px;
+      margin: 0;
+    }
+    @media screen and (max-width: 899px) {
+      .heading {
+        font-size: 25px;
+      }
+
+      .detail-container {
+        .detail {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ export const AboutUs = () => {
   return (
     <div className="about-us-container">
       <div className={`main-heading`} ref={ref}>
-        <Title>{`About Us`}</Title>
+        <Title>{`Welcome To Baltistan Adventures`}</Title>
         
       </div>
       <div className={`details-text`}>

@@ -12,12 +12,22 @@
     .ant-tabs {
       .ant-tabs-tab {
         .ant-tabs-tab-btn {
-          color: red;
+          color: rgb(240,205,47);
           opacity: 0.7;
           display: flex;
           align-items: center;
           justify-content: center;
         }
+      }
+
+      .ant-tabs-tab-active{
+        background-color: rgb(240,205,47);
+
+        .ant-tabs-tab-btn{
+          color: white;
+          font-weight: 500;
+        }
+        
       }
     }
   }

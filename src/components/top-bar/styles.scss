@@ -40,13 +40,17 @@
         border-radius: 3px;
         margin: 5px;
         a {
-          color: rgba(0,0,0,0.57);
+          color: rgba(0, 0, 0, 0.57);
           font-family: serif;
+
+          &:hover {
+            color: rgb(240, 205, 47);
+          }
         }
 
         &:hover {
-          color: #afd4f8;
-          background: #ccc;
+          color: rgb(240, 205, 47);
+          // background: #ccc;
         }
       }
     }
@@ -57,13 +61,9 @@
   }
 
   @media screen and (max-width: 899px) {
-
-    .menu{
-      background-color: rgba(0,0,0,0.67);
-      border: 2px solid #FFFFFE;
+    .menu {
+      border: 2px solid #fffffe;
       border-radius: 100%;
-      box-shadow: 0 1px 2px #000000;
-      color: #ffffff;
       font-size: 21px;
       padding: 4px 7px;
     }
@@ -89,10 +89,9 @@
         align-items: center;
 
         a {
-          color: rgba(0,0,0,0.57);
+          color: rgba(0, 0, 0, 0.57);
           font-family: serif;
         }
-
 
         &:hover {
           color: #afd4f8;

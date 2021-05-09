@@ -11,7 +11,7 @@ export const Main = () => {
       <Carousel autoplay effect={"fade"}>
         {imagesConfig.map((item) => (
           <div className="sliding-image-container">
-            <img src={item.url} key={item.url} alt={item.url} />
+            <img src={item.url} key={item.url} alt={item.url} loading="lazy" />
           </div>
         ))}
       </Carousel>

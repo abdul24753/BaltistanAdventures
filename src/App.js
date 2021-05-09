@@ -25,7 +25,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
+    setTimeout(() => setLoading(false), 8000);
   }, []);
 
   const renderLoader = () => {
@@ -56,7 +56,7 @@ function App() {
   return (
     <div className="main-container">
       {loading && renderLoader()}
-      {!loading && (
+     {<div style={!loading ? {height: '0px'}: {}}>
         <Router>
           <Topbar
             aboutUsRef={aboutUsRef}
@@ -89,7 +89,8 @@ function App() {
             </div>
           </BackTop>
         </Router>
-      )}
+        </div>}
+      
     </div>
   );
 }

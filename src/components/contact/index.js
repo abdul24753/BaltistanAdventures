@@ -18,7 +18,7 @@ export const Contact = () => {
         <Title>{`Contact Us`}</Title>
       </div>
       <div className="details-text">
-        <Paragraph>{` We are here to assist you for exploring bueaty of GILGIT BALTISTAN`}</Paragraph>
+        <Paragraph>{` We are here to assist you for exploring beauty of Gilgit Baltistan`}</Paragraph>
       </div>
       <div className="contact-platforms-container">
         <div>
@@ -38,7 +38,7 @@ export const Contact = () => {
               underline
             >{`Mail:`}</Title>
             <MailOutlined className="platform-icon" />
-            <Paragraph className="platform-value">{`baltistanAdventures@gmail.com`}</Paragraph>
+            <Paragraph className="platform-value">{`baltistanadventures@gmail.com`}</Paragraph>
           </div>{" "}
           <div className="platform">
             <Title

@@ -12,7 +12,7 @@
     .ant-tabs {
       .ant-tabs-tab {
         .ant-tabs-tab-btn {
-          color: rgb(240,205,47);
+          // color: rgb(240,205,47);
           opacity: 0.7;
           display: flex;
           align-items: center;
@@ -24,7 +24,7 @@
         background-color: rgb(240,205,47);
 
         .ant-tabs-tab-btn{
-          color: white;
+          color: rgba(0,0,0,0.67);
           font-weight: 500;
         }
         

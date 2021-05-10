@@ -20,7 +20,7 @@ ATV quad bikes, Dirt bikes desert jeep safari and other exciting activities in S
 
       <div className="images-container">
           
-      {Images.map(item=><Col xs={24} sm={24} md={8} lg={8} xl={6}>
+      {Images.map(item=><Col xs={10} sm={10} md={8} lg={8} xl={6}>
           <Image src={item.url} />
       </Col>)}
       </div>

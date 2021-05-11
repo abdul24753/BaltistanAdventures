@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/BaltistanAdventures/static/css/main.850ccfba.chunk.css",
-    "main.js": "/BaltistanAdventures/static/js/main.e4b9b43a.chunk.js",
-    "main.js.map": "/BaltistanAdventures/static/js/main.e4b9b43a.chunk.js.map",
+    "main.js": "/BaltistanAdventures/static/js/main.1fac20b0.chunk.js",
+    "main.js.map": "/BaltistanAdventures/static/js/main.1fac20b0.chunk.js.map",
     "runtime-main.js": "/BaltistanAdventures/static/js/runtime-main.45f6fa20.js",
     "runtime-main.js.map": "/BaltistanAdventures/static/js/runtime-main.45f6fa20.js.map",
     "static/css/2.79c08235.chunk.css": "/BaltistanAdventures/static/css/2.79c08235.chunk.css",
-    "static/js/2.3e652785.chunk.js": "/BaltistanAdventures/static/js/2.3e652785.chunk.js",
-    "static/js/2.3e652785.chunk.js.map": "/BaltistanAdventures/static/js/2.3e652785.chunk.js.map",
+    "static/js/2.170f6044.chunk.js": "/BaltistanAdventures/static/js/2.170f6044.chunk.js",
+    "static/js/2.170f6044.chunk.js.map": "/BaltistanAdventures/static/js/2.170f6044.chunk.js.map",
     "static/js/3.765a8475.chunk.js": "/BaltistanAdventures/static/js/3.765a8475.chunk.js",
     "static/js/3.765a8475.chunk.js.map": "/BaltistanAdventures/static/js/3.765a8475.chunk.js.map",
     "index.html": "/BaltistanAdventures/index.html",
     "static/css/2.79c08235.chunk.css.map": "/BaltistanAdventures/static/css/2.79c08235.chunk.css.map",
     "static/css/main.850ccfba.chunk.css.map": "/BaltistanAdventures/static/css/main.850ccfba.chunk.css.map",
-    "static/js/2.3e652785.chunk.js.LICENSE.txt": "/BaltistanAdventures/static/js/2.3e652785.chunk.js.LICENSE.txt",
+    "static/js/2.170f6044.chunk.js.LICENSE.txt": "/BaltistanAdventures/static/js/2.170f6044.chunk.js.LICENSE.txt",
     "static/media/ATVQuad.6d52acd0.jpeg": "/BaltistanAdventures/static/media/ATVQuad.6d52acd0.jpeg",
     "static/media/All.183ccd2d.jpeg": "/BaltistanAdventures/static/media/All.183ccd2d.jpeg",
     "static/media/DirtBike.ed81195a.jpeg": "/BaltistanAdventures/static/media/DirtBike.ed81195a.jpeg",
@@ -38,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.45f6fa20.js",
     "static/css/2.79c08235.chunk.css",
-    "static/js/2.3e652785.chunk.js",
+    "static/js/2.170f6044.chunk.js",
     "static/css/main.850ccfba.chunk.css",
-    "static/js/main.e4b9b43a.chunk.js"
+    "static/js/main.1fac20b0.chunk.js"
   ]
 }

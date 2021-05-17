@@ -28,16 +28,15 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
             </div>
           }
           description={
-            (
-              <Paragraph
-                ellipsis={{
-                  rows: 5,
-                  tooltip:true
-                }}
-              >
-                {descritpion}
-              </Paragraph>
-            ) || "This is a text"
+            (descritpion||[]).map(item=><Paragraph
+              // ellipsis={{
+              //   rows: 5,
+              //   tooltip:true
+              // }}
+              className="card-text-details"
+            >
+              {item}
+            </Paragraph>)
           }
         />
       </Card>

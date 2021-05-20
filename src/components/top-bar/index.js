@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "./../../images/logo.PNG";
 import { MenuOutlined } from "@ant-design/icons";
 import OnScreen from "./../isInViewport";
-
+import { useHistory } from "react-router-dom";
 
 export const Topbar = ({
   aboutUsRef,
@@ -13,6 +13,7 @@ export const Topbar = ({
   contactRef,
   galleryRef,
 }) => {
+  const history = useHistory();
   const [openMenu, setOpenMenu] = useState(null);
   const ref = useRef();
   const [visible, setVisible] = useState(false);
@@ -20,7 +21,7 @@ export const Topbar = ({
   var isVisible = OnScreen(ref);
 
   useEffect(() => {
-    if(!isVisible){
+    if (!isVisible) {
       setOpenMenu(isVisible);
     }
   }, [isVisible]);
@@ -34,28 +35,28 @@ export const Topbar = ({
     {
       id: "aboutUs",
       label: "About Us",
-      ref: aboutUsRef,
+      // ref: aboutUsRef,
     },
     {
       id: "services",
       label: "Services",
-      ref: servicesRef,
+      // ref: servicesRef,
     },
     {
       id: "gallery",
       label: "Gallery",
-      ref: galleryRef,
+      // ref: galleryRef,
     },
 
     {
       id: "team",
       label: "Team",
-      ref: teamRef,
+      // ref: teamRef,
     },
     {
       id: "contact",
       label: "Contact",
-      ref: contactRef,
+      // ref: contactRef,
     },
   ];
 
@@ -85,11 +86,12 @@ export const Topbar = ({
           <div
             className={`nav-bar--item`}
             onClick={() => {
-              item.ref && item.ref.current && item.ref.current.scrollIntoView();
-              console.log(item.ref);
+              history && history.push(`/${item.id}`);
+
               if (openMenu) {
                 setOpenMenu(!openMenu);
               }
+              // item.ref && item.ref.current && item.ref.current.scrollIntoView();
             }}
           >
             <Link>{item.label}</Link>

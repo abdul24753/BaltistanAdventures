@@ -1,32 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
 import "antd/dist/antd.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Home } from "./components/home";
-import { Topbar } from "./components/top-bar";
-import { Services } from "./components/services";
-import { Contact } from "./components/contact";
-import {Gallery} from './components/galley'
+import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
+// import { useLocation } from "react-router";
 
-import Team from "./components/team";
-import AboutUs from "./components/about-us";
-import { BackTop } from "antd";
-import { UpCircleOutlined } from "@ant-design/icons";
+import { Topbar } from "./components/top-bar";
+import { ServiceDetails } from "./components/service-details";
 
 import "./App.scss";
-import Main from "./components/main";
+import { MainPageContainer } from "./components/main-page-container";
 
 function App() {
+  const [loading, setLoading] = useState(false);
   const aboutUsRef = useRef(null);
   const servicesRef = useRef(null);
   const teamRef = useRef(null);
   const contactRef = useRef(null);
   const galleryRef = useRef(null);
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 8000);
-  }, []);
 
   const renderLoader = () => {
     return (
@@ -39,59 +28,42 @@ function App() {
     );
   };
 
-  const style = {
-    height: 40,
-    width: 40,
-    lineHeight: "40px",
-    borderRadius: 4,
-    backgroundColor: "rgb(240,205,47)",
-    color: "white",
-    textAlign: "center",
-    fontSize: 14,
-    opacity: 0.7,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
   return (
     <div className="main-container">
-      {loading && renderLoader()}
-     {<div style={!loading ? {height: '0px'}: {}}>
-        <Router>
-          <Topbar
-            aboutUsRef={aboutUsRef}
-            servicesRef={servicesRef}
-            teamRef={teamRef}
-            contactRef={contactRef}
-            galleryRef={galleryRef}
-          />
-          <Main />
-          {/* <Home /> */}
-          <div ref={aboutUsRef}>
-            <AboutUs />
-          </div>
-          <div ref={servicesRef}>
-            <Services />
-          </div>
-          <div ref={galleryRef}>
-            <Gallery />
-          </div>
-
-          <div ref={teamRef}>
-            <Team />
-          </div>
-
-          <div ref={contactRef}>
-            <Contact />
-          </div>
-          <BackTop>
-            <div style={style}>
-              <UpCircleOutlined />{" "}
-            </div>
-          </BackTop>
-        </Router>
-        </div>}
-      
+      {/* {loading && renderLoader()} */}
+      {
+        // <div style={!loading ? { height: "0px" } : {}}>
+        <div>
+          <Router>
+            <Topbar
+              aboutUsRef={aboutUsRef}
+              servicesRef={servicesRef}
+              teamRef={teamRef}
+              contactRef={contactRef}
+              galleryRef={galleryRef}
+            />
+            <Route path="/" exact>
+              <Redirect to="/home"></Redirect>
+            </Route>
+            <Route path="/:id" exact>
+              <MainPageContainer />
+            </Route>
+            <Route
+              path="/service/:name"
+              exact
+              render={() => (
+                <ServiceDetails
+                  aboutUsRef={aboutUsRef}
+                  servicesRef={servicesRef}
+                  teamRef={teamRef}
+                  contactRef={contactRef}
+                  galleryRef={galleryRef}
+                />
+              )}
+            ></Route>
+          </Router>
+        </div>
+      }
     </div>
   );
 }

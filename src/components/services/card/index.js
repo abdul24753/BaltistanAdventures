@@ -1,16 +1,19 @@
 import React from "react";
 import { Card, Typography } from "antd";
 import "./styles.scss";
+import {useHistory} from 'react-router-dom'
 import { MacCommandOutlined } from "@ant-design/icons";
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 
 export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
+  const history=useHistory()
   return (
     <div class="services-card-container">
       <Card
         hoverable
         cover={<img alt="example" src={imgSrc} />}
+        onClick={()=>{history && history.push(`/service/${title}`)}}
         actions={[
           <a
             href="https://docs.google.com/forms/d/15OtVOEj2fBbdfJ6s-C33C9BT6o6llNyNVmvnl2P6vN8"
@@ -29,10 +32,6 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
           }
           description={
             (descritpion||[]).map(item=><Paragraph
-              // ellipsis={{
-              //   rows: 5,
-              //   tooltip:true
-              // }}
               className="card-text-details"
             >
               {item}

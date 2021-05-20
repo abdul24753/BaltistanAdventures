@@ -33,7 +33,7 @@ function App() {
       {/* {loading && renderLoader()} */}
       {
         // <div style={!loading ? { height: "0px" } : {}}>
-        <div>
+        <React.StrictMode>
           <Router>
             <Topbar
               aboutUsRef={aboutUsRef}
@@ -62,7 +62,7 @@ function App() {
               )}
             ></Route>
           </Router>
-        </div>
+          </React.StrictMode>
       }
     </div>
   );

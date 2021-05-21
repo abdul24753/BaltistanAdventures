@@ -1,27 +1,38 @@
-import React from 'react'
-import Topbar from '../top-bar'
+import React from "react";
+import services from "../services/helpers";
+import { useParams } from "react-router-dom";
+import { MacCommandOutlined } from "@ant-design/icons";
 
-import './styles.scss'
+import { Typography } from "antd";
 
-export const ServiceDetails = ({
-    aboutUsRef,
-    servicesRef,
-    teamRef,
-    contactRef,
-    galleryRef,
-  }) => {
-    return(
-        <>
-        {/* <Topbar
-              aboutUsRef={aboutUsRef}
-              servicesRef={servicesRef}
-              teamRef={teamRef}
-              contactRef={contactRef}
-              galleryRef={galleryRef}
-            /> */}
-        <h1>ServiceDetails</h1>
-        </>
-    )
-}
+import "./styles.scss";
 
-export default ServiceDetails
+const { Title, Paragraph } = Typography;
+
+export const ServiceDetails = () => {
+  const { name } = useParams();
+  const selectedService = services.find((item) => item.title === name);
+  return (
+    <div className="service-details-container">
+      <div className="image-container">
+        <img src={selectedService.img} alt={name} />
+      </div>
+      <div className={`main-heading`}>
+        <Title>{name}</Title>
+      </div>
+      <div className="details-text">
+        <Paragraph>{selectedService.detail}</Paragraph>
+      </div>
+      <a
+        href="https://docs.google.com/forms/d/15OtVOEj2fBbdfJ6s-C33C9BT6o6llNyNVmvnl2P6vN8"
+        target="_blank"
+      >
+        {" "}
+        <MacCommandOutlined /> Register Yourself
+      </a>
+      ,
+    </div>
+  );
+};
+
+export default ServiceDetails;

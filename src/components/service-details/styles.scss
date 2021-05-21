@@ -1,0 +1,38 @@
+.service-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+
+  a {
+    background-color: #f0cd2f;
+    color: white !important;
+    padding: 7px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .details-text{
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 10px;
+  }
+
+  .image-container {
+    height: calc(60vh);
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 899px) {
+    .image-container {
+      height: calc(40vh);
+    }
+  }
+}

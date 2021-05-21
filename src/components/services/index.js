@@ -47,6 +47,7 @@ export const Services = () => {
           }}
         >
           <TabPane tab="Activities" key="activities" />
+          <TabPane tab="Sight Seeing" key="others" />
           <TabPane tab="Trips" key="trips" />
           <TabPane tab="Others" key="others" />
         </Tabs>

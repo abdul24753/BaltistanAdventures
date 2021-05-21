@@ -6,17 +6,10 @@ import { MenuOutlined } from "@ant-design/icons";
 import OnScreen from "./../isInViewport";
 import { useHistory } from "react-router-dom";
 
-export const Topbar = ({
-  aboutUsRef,
-  servicesRef,
-  teamRef,
-  contactRef,
-  galleryRef,
-}) => {
+export const Topbar = () => {
   const history = useHistory();
   const [openMenu, setOpenMenu] = useState(null);
   const ref = useRef();
-  const [visible, setVisible] = useState(false);
 
   var isVisible = OnScreen(ref);
 
@@ -30,33 +23,27 @@ export const Topbar = ({
     {
       id: "home",
       label: "Home",
-      // ref: homeRef,
     },
     {
       id: "aboutUs",
       label: "About Us",
-      // ref: aboutUsRef,
     },
     {
       id: "services",
       label: "Services",
-      // ref: servicesRef,
     },
     {
       id: "gallery",
       label: "Gallery",
-      // ref: galleryRef,
     },
 
     {
       id: "team",
       label: "Team",
-      // ref: teamRef,
     },
     {
       id: "contact",
       label: "Contact",
-      // ref: contactRef,
     },
   ];
 
@@ -91,7 +78,6 @@ export const Topbar = ({
               if (openMenu) {
                 setOpenMenu(!openMenu);
               }
-              // item.ref && item.ref.current && item.ref.current.scrollIntoView();
             }}
           >
             <Link>{item.label}</Link>

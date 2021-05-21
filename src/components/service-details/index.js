@@ -9,7 +9,11 @@ import "./styles.scss";
 
 const { Title, Paragraph } = Typography;
 
+
 export const ServiceDetails = () => {
+  window.scrollTo(0, 0)
+
+  
   const { name } = useParams();
   const selectedService = services.find((item) => item.title === name);
   return (

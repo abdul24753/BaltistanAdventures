@@ -1,6 +1,7 @@
 .services-card-container {
   height: 100%;
 
+
   .service-title{
     font-size: 24px;
     color:rgba(0, 0, 0, 0.67);
@@ -30,6 +31,14 @@
 
   .ant-card {
     height: 100%;
+
+    :hover{
+      
+        img{
+          transform: scale(1.2); 
+        }
+      
+    }
   }
   .ant-card-cover {
     height: 195px;
@@ -83,10 +92,6 @@
       line-height: 1;
       font-size: 12px;
       text-align: justify;
-    }
-
-    .flip-card {
-      height: 400px;
     }
   }
 }

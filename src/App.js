@@ -8,6 +8,7 @@ import { ServiceDetails } from "./components/service-details";
 
 import "./App.scss";
 import { MainPageContainer } from "./components/main-page-container";
+import { ServiceCardContainer } from "./components/services/card-container";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,11 +30,11 @@ function App() {
   };
 
   return (
-    <div className="main-container">
+    <div className="app-container">
       {/* {loading && renderLoader()} */}
       {
         // <div style={!loading ? { height: "0px" } : {}}>
-        <React.StrictMode>
+        // <React.StrictMode>
           <Router>
             <Topbar
               aboutUsRef={aboutUsRef}
@@ -49,20 +50,33 @@ function App() {
               <MainPageContainer />
             </Route>
             <Route
+              path="/service/type/:serviceId"
+              exact
+              render={() => (
+                <ServiceCardContainer
+                  // aboutUsRef={aboutUsRef}
+                  // servicesRef={servicesRef}
+                  // teamRef={teamRef}
+                  // contactRef={contactRef}
+                  // galleryRef={galleryRef}
+                />
+              )}
+            ></Route>
+            <Route
               path="/service/:name"
               exact
               render={() => (
                 <ServiceDetails
-                  aboutUsRef={aboutUsRef}
-                  servicesRef={servicesRef}
-                  teamRef={teamRef}
-                  contactRef={contactRef}
-                  galleryRef={galleryRef}
+                  // aboutUsRef={aboutUsRef}
+                  // servicesRef={servicesRef}
+                  // teamRef={teamRef}
+                  // contactRef={contactRef}
+                  // galleryRef={galleryRef}
                 />
               )}
             ></Route>
           </Router>
-          </React.StrictMode>
+          // </React.StrictMode>
       }
     </div>
   );

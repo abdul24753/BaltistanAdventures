@@ -1,0 +1,73 @@
+.cards-container {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 15px 5%;
+    background-color: #f4f4f4;
+
+    .ant-col {
+      height: inherit;
+    }
+
+
+      .ant-card {
+        height: 100%;
+      }
+      .ant-card-cover {
+        height: 195px;
+        object-fit: contain;
+        overflow: hidden;
+    
+        img {
+          height: inherit;
+        }
+    
+        :hover{
+            transform: scale(1.2);  
+        }
+      }
+    
+      .ant-card-body {
+        height: calc(100% - 250px);
+      }
+    
+      .ant-card-actions {
+        padding: 0 30px;
+    
+        a {
+          background-color: rgb(240,205,47);
+          color: white !important;
+          padding: 7px;
+          border-radius: 4px;
+        }
+    
+        .ant-btn {
+          border-radius: 5px;
+    
+          a {
+            color: white;
+          }
+        }
+    
+        .ant-btn-primary:active {
+          background-color: #40a9ff;
+          color: white;
+        }
+      }
+    
+      .ant-card-meta-title {
+        white-space: break-spaces;
+      }
+    
+      @media screen and (max-width: 899px) {
+        .ant-card-meta-description {
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 1;
+          font-size: 12px;
+          text-align: justify;
+        }
+      }
+  }

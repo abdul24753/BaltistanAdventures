@@ -38,6 +38,14 @@
     }
   }
 
+  .services-type-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
   .card-container {
     display: flex;
     // align-items: center;

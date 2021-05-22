@@ -1,13 +1,13 @@
 import React from "react";
-import { Card, Typography } from "antd";
+import { Button, Card, Typography } from "antd";
 import "./styles.scss";
-import {useHistory} from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import { MacCommandOutlined } from "@ant-design/icons";
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 
 export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
-  const history=useHistory()
+  const history = useHistory();
   return (
     <div class="services-card-container">
       <Card
@@ -29,21 +29,29 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
               <Title level={3}>{title}</Title>
             </div>
           }
-          description={
-            (descritpion||[]).map(item=><Paragraph
+          description={(descritpion || []).map((item) => (
+            <Paragraph
               className="card-text-details"
               ellipsis={{
                 rows: 7,
-                symbol: <p style={{display:'inline-block', color: 'yellow'}}
-                onClick={()=>{history && history.push(`/service/${title}`)}}>Read More</p>,
+                symbol: (
+                  <Button
+                    ghost
+                    type={"primary"}
+                    onClick={() => {
+                      history && history.push(`/service/${title}`);
+                    }}
+                  >
+                    Read More
+                  </Button>
+                ),
 
-                expandable: 'true'
-                
+                expandable: "true",
               }}
             >
               {item}
-            </Paragraph>)
-          }
+            </Paragraph>
+          ))}
         />
       </Card>
     </div>

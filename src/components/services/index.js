@@ -3,6 +3,16 @@ import { Col, Typography, Tabs, Card } from "antd";
 import OnScreen from "./../isInViewport";
 import CardContainer from "./card";
 import { useHistory } from "react-router-dom";
+import adventureicon from '../../images/adventure-icon.jpg'
+import sight_seeing_icon from '../../images/sigh-removebg-preview.png'
+import trip_icon from '../../images/trip_icon.jpg'
+import others_icon from '../../images/others_icon-removebg-preview.png'
+import hiking_icon from '../../images/hiking_icon.jpg'
+
+
+
+
+
 import "./styles.scss";
 
 import serviceCards from "./helpers";
@@ -24,7 +34,7 @@ export const Services = () => {
 
   const renderCardItem = (item) => {
     return (
-      <Col xs={24} sm={24} md={24} lg={5} xl={5}>
+      <Col xs={8} sm={8} md={8} lg={6} xl={6}>
         <CardContainer
           title={item.title}
           imgSrc={item.img}
@@ -37,10 +47,10 @@ export const Services = () => {
   return (
     <div className="services-container">
       <div className={`main-heading`} ref={ref}>
-        <Title>{`Our Services`}</Title>
+        <Title level={3} className="label-text">{`Our Services`}</Title>
       </div>
       <div className="details-text">
-        <Paragraph>{`Come Explore the world with us and enjoy the best trip of your life. We offer Trips to every end of the world.`}</Paragraph>
+        <Paragraph >{`Come Explore the world with us and enjoy the best trip of your life. We offer Trips to every end of the world.`}</Paragraph>
       </div>
       <div className="services--tabs-container">
         {/* <Tabs
@@ -56,22 +66,63 @@ export const Services = () => {
           <TabPane tab="Others" key="others" />
         </Tabs> */}
         <div className="services-type-container">
-        <Col xs={24} sm={24} md={24} lg={5} xl={5}>
+       
           <Card
-            title="Activities"
-            extra={`Discover More`}
-            style={{ width: '100%' }}
+            // title="Activities"
+            // extra={`Discover More`}
+            style={{ width: '100%', background: '#9DCCD2' }}
             hoverable
             onClick={() => {
               history && history.push(`/service/type/activities`);
             }}
+
           >
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <img src={adventureicon} alt={""} width={70} height={70} />
+
+            <Title level={3} className="label-text">Activities</Title>
+            <Paragraph className="more-info-text">Find Out More</Paragraph>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
 
           </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={5} xl={5}>
           <Card
+            // title="Activities"
+            // extra={`Discover More`}
+            style={{ width: '100%', background: '#F0E0BF' }}
+            hoverable
+            onClick={() => {
+              history && history.push(`/service/type/hiking`);
+            }}
+
+          >
+            <img src={hiking_icon} alt={""} width={70} height={70} />
+
+            <Title level={3} className="label-text">Hiking</Title>
+            <Paragraph className="more-info-text">Find Out More</Paragraph>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+
+          </Card>
+         
+          
+            <Card
+            // title="Activities"
+            // extra={`Discover More`}
+            style={{ width: '100%', background: '#84D2A7' }}
+            hoverable
+            onClick={() => {
+              history && history.push(`/service/type/sightSeeing`);
+            }}
+
+          >
+            <img src={sight_seeing_icon} alt={""} width={70} height={70} />
+
+            <Title level={3} className="label-text">Sight Seeing</Title>
+            <Paragraph className="more-info-text">Find Out More</Paragraph>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+
+          </Card>
+          {/* </Col> */}
+
+          {/* <Card
             title="Sight Seeing"
            extra={`Discover More`}
             style={{ width: '100%' }}
@@ -83,10 +134,27 @@ export const Services = () => {
           >
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
            
-          </Card>{" "}
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={5} xl={5}>
+          </Card>{" "} */}
+          
+         
           <Card
+            // title="Activities"
+            // extra={`Discover More`}
+            style={{ width: '100%', background: '#FEFEFE' }}
+            hoverable
+            onClick={() => {
+              history && history.push(`/service/type/trips`);
+            }}
+
+          >
+            <img src={trip_icon} alt={""} width={70} height={70} />
+
+            <Title level={3} className="label-text">Trips</Title>
+            <Paragraph className="more-info-text">Find Out More</Paragraph>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+
+          </Card>
+          {/* <Card
             title="Trips"
            extra={`Discover More`}
             style={{ width: '100%' }}
@@ -98,10 +166,27 @@ export const Services = () => {
           >
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             
-          </Card>{" "}
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={5} xl={5}>
+          </Card>{" "} */}
+          
+          
           <Card
+            // title="Activities"
+            // extra={`Discover More`}
+            style={{ width: '100%', background: '#ECBCCC' }}
+            hoverable
+            onClick={() => {
+              history && history.push(`/service/type/others`);
+            }}
+
+          >
+            <img src={others_icon} alt={""} width={70} height={70} />
+
+            <Title level={3} className="label-text">Others</Title>
+            <Paragraph className="more-info-text">Find Out More</Paragraph>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+
+          </Card>
+          {/* <Card
             title="Others"
            extra={`Discover More`}
             style={{ width: '100%' }}
@@ -113,8 +198,11 @@ export const Services = () => {
           >
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             
-          </Card>
-          </Col>
+          </Card> */}
+        
+         
+          
+          
         </div>
       </div>
     </div>

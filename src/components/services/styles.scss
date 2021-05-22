@@ -3,7 +3,6 @@
   padding: 3%;
   padding-bottom: 30px;
 
-
   .services--tabs-container {
     display: flex;
     align-items: center;
@@ -20,14 +19,13 @@
         }
       }
 
-      .ant-tabs-tab-active{
-        background-color: rgb(240,205,47);
+      .ant-tabs-tab-active {
+        background-color: rgb(240, 205, 47);
 
-        .ant-tabs-tab-btn{
-          color: rgba(0,0,0,0.67);
+        .ant-tabs-tab-btn {
+          color: rgba(0, 0, 0, 0.67);
           font-weight: 500;
         }
-        
       }
     }
   }
@@ -38,13 +36,30 @@
     }
   }
 
-  .services-type-container{
+  .services-type-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
+
+    .ant-card {
+      width: 164px !important;
+
+      .ant-card-body {
+        padding: 12px;
+
+        .more-info-text {
+          color: darkmagenta;
+          text-decoration: underline;
+        }
+
+        .label-text{
+          color:rgba(0,0,0,0.67)
+        }
+      }
+    }
   }
 
   .card-container {
@@ -109,8 +124,3 @@
     }
   }
 }
-
-
-
-
-

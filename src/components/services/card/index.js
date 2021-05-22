@@ -33,7 +33,7 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
             <Paragraph
               className="card-text-details"
               ellipsis={{
-                rows: 7,
+                rows: 8,
                 symbol: (
                   <Button
                     ghost

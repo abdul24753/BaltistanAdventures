@@ -24,7 +24,7 @@ export const Services = () => {
 
   const renderCardItem = (item) => {
     return (
-      <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+      <Col xs={24} sm={24} md={24} lg={5} xl={5}>
         <CardContainer
           title={item.title}
           imgSrc={item.img}
@@ -56,7 +56,7 @@ export const Services = () => {
           <TabPane tab="Others" key="others" />
         </Tabs> */}
         <div className="services-type-container">
-        <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+        <Col xs={24} sm={24} md={24} lg={5} xl={5}>
           <Card
             title="Activities"
             extra={`Discover More`}
@@ -70,7 +70,7 @@ export const Services = () => {
 
           </Card>
           </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+          <Col xs={24} sm={24} md={24} lg={5} xl={5}>
           <Card
             title="Sight Seeing"
            extra={`Discover More`}
@@ -85,7 +85,7 @@ export const Services = () => {
            
           </Card>{" "}
           </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+          <Col xs={24} sm={24} md={24} lg={5} xl={5}>
           <Card
             title="Trips"
            extra={`Discover More`}
@@ -100,7 +100,7 @@ export const Services = () => {
             
           </Card>{" "}
           </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+          <Col xs={24} sm={24} md={24} lg={5} xl={5}>
           <Card
             title="Others"
            extra={`Discover More`}

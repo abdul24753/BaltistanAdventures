@@ -8,7 +8,6 @@ import HoneymoonTrip from "./../../images/honeymoon-trip.jpg";
 import Camping from "./../../images/camping.jpg";
 import CorporateTrip from "./../../images/corporate-tour.jpg";
 import CandleLightDinner from "./../../images/desertcandlelightdinner.jpg";
-// import Hiking from "./../../images/hiking.jpg";
 import blind_lake from "./../../images/blind_lake.jpeg";
 import chaqchan_mosque from "./../../images/chaqchan_mosque.jpeg";
 import chunda_valley from "./../../images/chunda_valley.jpeg";

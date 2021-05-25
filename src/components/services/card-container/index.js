@@ -24,6 +24,8 @@ export const ServiceCardContainer = () => {
         return "Trips";
       case "others":
         return "Others";
+        case "hiking":
+        return "Hiking";
         default: return ''
     }
   }

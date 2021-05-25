@@ -14,8 +14,9 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
         hoverable
         cover={<img alt="example" src={imgSrc} />}
         actions={[
+          // eslint-disable-next-line react/jsx-no-target-blank
           <a
-            href="https://docs.google.com/forms/d/15OtVOEj2fBbdfJ6s-C33C9BT6o6llNyNVmvnl2P6vN8"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeV2ujo2sA_jp_pHS1_OgtJgumSdKHpbdXuckgJnqyPKQp2bw/viewform"
             target="_blank"
           >
             {" "}
@@ -29,7 +30,7 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
               <Title level={3}>{title}</Title>
             </div>
           }
-          description={(descritpion || []).map((item) => (
+          description={
             <Paragraph
               className="card-text-details"
               ellipsis={{
@@ -49,9 +50,9 @@ export const CardContainer = ({ title = "", imgSrc, descritpion = null }) => {
                 expandable: "true",
               }}
             >
-              {item}
+              {descritpion}
             </Paragraph>
-          ))}
+          }
         />
       </Card>
     </div>

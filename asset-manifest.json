@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BaltistanAdventures/static/css/main.9f918842.chunk.css",
-    "main.js": "/BaltistanAdventures/static/js/main.95b00c2a.chunk.js",
-    "main.js.map": "/BaltistanAdventures/static/js/main.95b00c2a.chunk.js.map",
+    "main.js": "/BaltistanAdventures/static/js/main.4b8ed33e.chunk.js",
+    "main.js.map": "/BaltistanAdventures/static/js/main.4b8ed33e.chunk.js.map",
     "runtime-main.js": "/BaltistanAdventures/static/js/runtime-main.d85ea6ac.js",
     "runtime-main.js.map": "/BaltistanAdventures/static/js/runtime-main.d85ea6ac.js.map",
     "static/css/2.79c08235.chunk.css": "/BaltistanAdventures/static/css/2.79c08235.chunk.css",
@@ -62,6 +62,6 @@
     "static/css/2.79c08235.chunk.css",
     "static/js/2.882c4f4a.chunk.js",
     "static/css/main.9f918842.chunk.css",
-    "static/js/main.95b00c2a.chunk.js"
+    "static/js/main.4b8ed33e.chunk.js"
   ]
 }

@@ -2,21 +2,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10px;
+  // padding: 0 10px;
 
   a {
     background-color: #f0cd2f;
     color: white !important;
     padding: 7px;
-    width: 100%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+  }
+
+  @media screen and (min-width:900px) {
+    a{
+      width: 97%;
+      align-items: flex-end;
+    }
+  }
+
+  .ant-card-actions {
+    padding: 0 30px;
+
+    a {
+      background-color: rgb(240,205,47);
+      color: white !important;
+      padding: 7px;
+      border-radius: 4px;
+    }
+
+    .ant-btn {
+      border-radius: 5px;
+
+      a {
+        color: white;
+      }
+    }
+
+    .ant-btn-primary:active {
+      background-color: #40a9ff;
+      color: white;
+    }
   }
 
   .details-text{
       border-bottom: 1px solid #ddd;
+      margin: 0 10px;
       margin-bottom: 10px;
 
       .ant-typography{

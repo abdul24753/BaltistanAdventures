@@ -36,20 +36,20 @@ const CardsItems = [
   {
     type: "sightSeeing",
     img: husainabad_waterfall,
-    title: "Hussainabad waterfall  ",
+    title: "Hussainabad Waterfall  ",
     detail: `It approximately takes 10-15 minutes to reach there from Skardu city. `
   },
   {
     type: "sightSeeing",
     img: katpana_lake,
-    title: "Katpana lake ",
+    title: "Katpana Lake ",
     detail: `It is located just near the katpana cold desert. `
   },
   
   {
     type: "sightSeeing",
     img: sadpara,
-    title: "Sadpara lake ",
+    title: "Sadpara Lake ",
     detail: `Satpara sar Lake  is a natural lake near Skardu, Gilgit-Baltistan, Pakistan, which supplies water to Skardu Valley. It is fed by the Satpara Stream. Satpara Lake is situated at an elevation of 2,636 meters (8,650 ft.) above sea level and is spread over an area of 2.5 km² 
 
     It approximately takes 50 minutes to reach there from Skardu city.  `
@@ -65,14 +65,14 @@ const CardsItems = [
   {
     type: "sightSeeing",
     img: blind_lake,
-    title: "Blind lake ",
+    title: "Blind Lake ",
     detail: `Zharba Tso or Blind lake is a Panoramic Lake near Shigar Valley, Shigar, Gilgit-Baltistan region in Pakistan. Zharba Lake uses as a water reservoir for the residents of Shigar Valley. It is fed by the Indus River.  The lake is on a way of Shigar Valley. The lake is surrounded by the Indus River on one side and Shigar River to another side 
 
     It approximately takes 90 minutes to reach there from Skardu city. `
   },{
     type: "sightSeeing",
     img: khaplu_fort,
-    title: "Khaplu fort ",
+    title: "Khaplu Fort ",
     detail: `Khaplu Palace locally known as Yabgo Khar (meaning "The fort of Doqsa"), is an old fort and palace located in Khaplu, in the Gilgit-Baltistan region of northern Pakistan. The palace, considered an architectural heritage and a tourist attraction, was built in the mid-19th century, replacing an earlier fort located nearby. It served as a royal residence for the Raja of Khaplu. 
 
     It approximately takes 3 hours to reach there from Skardu city. `
@@ -103,7 +103,7 @@ const CardsItems = [
   },{
     type: "sightSeeing",
     img: katpana_desert,
-    title: "Katpana cold desert ",
+    title: "Katpana Cold Desert ",
     detail: `The Cold Desert, also known as the Katpana Desert or Biama Nakpo is a high-altitude desert located near Skardu, Gilgit−Baltistan, Pakistan. The desert contains large sand dunes that are sometimes covered in snow during winter. Situated at an elevation of 2,226 metres (7,303 ft.) above sea level, the Cold Desert is one of the highest deserts in the world. While the desert technically stretches from the Khaplu Valley to Nubra in Indian-administered Ladakh, the largest desert area proper is found in Skardu and Shigar Valley, both within Pakistani-administered territory. The portion of the desert that is most frequented by tourists is located near the Skardu Airport. 
 
     It approximately takes 31 minutes to reach there from Skardu city. `
@@ -111,7 +111,7 @@ const CardsItems = [
   {
     type: "sightSeeing",
     img: manthoka_waterfall,
-    title: "Manthokha waterfall",
+    title: "Manthokha Waterfall",
     detail: `Manthokha Waterfall is a waterfall located in Kharmang Valley, Skardu, Gilgit-Baltistan, the extreme northern region of Pakistan. This waterfall is approx 180 feet high from ground, and located almost 80 kilometres (50 mi) away from downtown Skardu. The waterfall is a mystic place featuring lush green pastures, fresh gurgling streams, towering Rocky Mountains of Karakorum and indigenously designed restaurants and much more. The main highlight of the restaurant is the local trout fish, apart from the waterfall another worthy feat is the fish farm where trout fishes are kept for the sightseers. 
 
     It approximately takes 2 hours to reach there from Skardu city. `
@@ -119,7 +119,7 @@ const CardsItems = [
   {
     type: "sightSeeing",
     img: chunda_valley,
-    title: "Chunda valley ",
+    title: "Chunda Valley ",
     detail: `Chunda Valley is a spectacular and breathtaking valley in Skardu city only at a short distance of about one hour drive from the downtown, Yadgar Chowk Skardu. 
 
     This valley is located at a raised ground which provides a pleasing view in summer by its green carpeted and lush green farms and fields. The valley is famous for different kind of fruits, especially for the seedless raisins. The valley is totally self-sustained because its fertile land allows the inhabitant to grow a different kind of cereals and fruits. 
@@ -128,14 +128,14 @@ const CardsItems = [
   },{
     type: "sightSeeing",
     img: shigar_fort,
-    title: "Shigar fort (Serena Shigar) ",
+    title: "Shigar Fort (Serena Shigar) ",
     detail: `The Shigar Fort  means The Fort on Rock  is an old fort of Baltistan  located in the town of Shigar. It was built in the 17th century by the Raja of Amacha Dynasty of Shigar. The fort has been restored by Aga Khan Cultural Service Pakistan (AKCSP-P), the Pakistan arm of the Aga Khan Historic Cities Programme. After restoration, the Fort was converted to a museum and luxury hotel managed by Serena Hotels. The restoration process took place from 1999 to 2004 and cost approximately US$1.4 million 
 
     It approximately takes 60 minutes to reach there from Skardu city `
   },{
     type: "sightSeeing",
     img: fish_farm,
-    title: "Sailing trout fish farm khaplu ",
+    title: "Sailing Trout Fish Farm Khaplu ",
     detail: `Sailing Valley Khaplu is a beautiful valley in the Ghanche District, Khaplu Gilgit-Baltistan. Saling is a doorway to Hushe Valley as well as a very nice camping spot just beside a lake. On the other side is a marvelous view of Khaplu Town. There is a wonderful fish farm in Saling that offers delicious fish feasts. That is also a picnic point in Sailing valley. Many springs are also present in the fish farm. A hot spring is in this area which is good for bathing in the winters as well as. The water of this spring is hot in winters and cold in summers. 
 
     It approximately takes 3 hours to reach there from Skardu city. `
@@ -177,7 +177,7 @@ const CardsItems = [
   {
     type: "trips",
     img: StudyTrip,
-    title: "Student Tour",
+    title: "Student Trip",
     detail: `Students are the assets for our future. While studying student can’t full fill their wishes due to short of money or short of time. “Baltistan Adventures” is arranging special short tours and treks in a very reasonable cost for students. Student guide will be provide to you. Guide will be educated and he will guide you from every stages and explain you everything whether about fort, Mountains, City, village etc. Guide will be very young smart and very friendly.  
     `
   },
@@ -222,7 +222,7 @@ const CardsItems = [
   {
     type: "hiking",
     img: kharpocho,
-    title: "Kharpocho Fort skardu",
+    title: "Kharpocho Fort Skardu",
     detail: `Skardu Fort or Kharpocho “The king of Forts” is a fort located at Skardu city Gilgit-Baltistan. It’s a very nice place to visit and is located near the main bazar of the Skardu City. It’s a trekking place and nearly take 25-30 minutes to reach at the top depending upon your health do not forget to put water bottles in your bag because no facilities available there. This place is not suitable for you if you've children or family.  `,
   },
   {

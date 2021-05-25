@@ -1,18 +1,19 @@
 .services-card-container {
   height: 100%;
 
+  .ant-typography-expand {
+    position: absolute;
+  }
 
-  .service-title{
+  .service-title {
     font-size: 24px;
-    color:rgba(0, 0, 0, 0.67);
+    color: rgba(0, 0, 0, 0.67);
     text-align: center;
-
-
   }
 
   .service-title::after {
     border-bottom: 1px solid #ccc;
-    color: rgb(240,205,47);
+    color: rgb(240, 205, 47);
     content: "*";
     display: flex;
     font-family: fontawesome;
@@ -25,19 +26,17 @@
     justify-content: center;
   }
 
-  .card-text-details{
+  .card-text-details {
     margin-bottom: 0;
   }
 
   .ant-card {
     height: 100%;
 
-    :hover{
-      
-        img{
-          transform: scale(1.2); 
-        }
-      
+    :hover {
+      img {
+        transform: scale(1.2);
+      }
     }
   }
   .ant-card-cover {
@@ -49,8 +48,8 @@
       height: inherit;
     }
 
-    :hover{
-        transform: scale(1.2);  
+    :hover {
+      transform: scale(1.2);
     }
   }
 
@@ -62,7 +61,7 @@
     padding: 0 30px;
 
     a {
-      background-color: rgb(240,205,47);
+      background-color: rgb(240, 205, 47);
       color: white !important;
       padding: 7px;
       border-radius: 4px;

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/BaltistanAdventures/static/css/main.517e5045.chunk.css",
+    "main.css": "/BaltistanAdventures/static/css/main.67e6227b.chunk.css",
     "main.js": "/BaltistanAdventures/static/js/main.95b00c2a.chunk.js",
     "main.js.map": "/BaltistanAdventures/static/js/main.95b00c2a.chunk.js.map",
     "runtime-main.js": "/BaltistanAdventures/static/js/runtime-main.d85ea6ac.js",
@@ -12,7 +12,7 @@
     "static/js/3.bba41558.chunk.js.map": "/BaltistanAdventures/static/js/3.bba41558.chunk.js.map",
     "index.html": "/BaltistanAdventures/index.html",
     "static/css/2.79c08235.chunk.css.map": "/BaltistanAdventures/static/css/2.79c08235.chunk.css.map",
-    "static/css/main.517e5045.chunk.css.map": "/BaltistanAdventures/static/css/main.517e5045.chunk.css.map",
+    "static/css/main.67e6227b.chunk.css.map": "/BaltistanAdventures/static/css/main.67e6227b.chunk.css.map",
     "static/js/2.882c4f4a.chunk.js.LICENSE.txt": "/BaltistanAdventures/static/js/2.882c4f4a.chunk.js.LICENSE.txt",
     "static/media/ATVQuad.6d52acd0.jpeg": "/BaltistanAdventures/static/media/ATVQuad.6d52acd0.jpeg",
     "static/media/All.183ccd2d.jpeg": "/BaltistanAdventures/static/media/All.183ccd2d.jpeg",
@@ -61,7 +61,7 @@
     "static/js/runtime-main.d85ea6ac.js",
     "static/css/2.79c08235.chunk.css",
     "static/js/2.882c4f4a.chunk.js",
-    "static/css/main.517e5045.chunk.css",
+    "static/css/main.67e6227b.chunk.css",
     "static/js/main.95b00c2a.chunk.js"
   ]
 }

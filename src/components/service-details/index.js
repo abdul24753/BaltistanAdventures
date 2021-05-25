@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import services from "../services/helpers";
 import { useParams } from "react-router-dom";
@@ -28,7 +30,7 @@ export const ServiceDetails = () => {
         <Paragraph>{selectedService.detail}</Paragraph>
       </div>
       <a
-        href="https://docs.google.com/forms/d/15OtVOEj2fBbdfJ6s-C33C9BT6o6llNyNVmvnl2P6vN8"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeV2ujo2sA_jp_pHS1_OgtJgumSdKHpbdXuckgJnqyPKQp2bw/viewform"
         target="_blank"
       >
         {" "}

@@ -6,13 +6,14 @@ import { useParams } from "react-router-dom";
 
 import CardContainer from "../card";
 
-const {Title, Paragraph} = Typography
+const { Title } = Typography;
 
 export const ServiceCardContainer = () => {
   const { serviceId } = useParams();
 
-  useEffect(()=>{window.scrollTo(0,0)},[])
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const getServiceType = (key) => {
     switch (key) {
@@ -24,11 +25,12 @@ export const ServiceCardContainer = () => {
         return "Trips";
       case "others":
         return "Others";
-        case "hiking":
+      case "hiking":
         return "Hiking";
-        default: return ''
+      default:
+        return "";
     }
-  }
+  };
   const renderCardItem = (item) => {
     return (
       <Col xs={24} sm={24} md={24} lg={8} xl={8} key={item.title}>
@@ -41,20 +43,9 @@ export const ServiceCardContainer = () => {
     );
   };
 
-  const renderServiceHeader = () => {
-    return (
-      <>
-      <Title>{getServiceType(serviceId)}</Title>
-      <Paragraph>
-      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </Paragraph>
-      </>
-    )
-  }
-
   return (
     <div className="cards-container">
-      {renderServiceHeader()}
+      <Title className="main-heading title-header">{getServiceType(serviceId)}</Title>
       {serviceCards
         .filter((item) => item.type === serviceId)
         .map((item) => renderCardItem(item))}

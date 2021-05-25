@@ -37,28 +37,27 @@ const CardsItems = [
     type: "sightSeeing",
     img: husainabad_waterfall,
     title: "Hussainabad Waterfall  ",
-    detail: `It approximately takes 10-15 minutes to reach there from Skardu city. `
+    detail: `It approximately takes 10-15 minutes to reach there from Skardu city.`
   },
   {
     type: "sightSeeing",
     img: katpana_lake,
-    title: "Katpana Lake ",
-    detail: `It is located just near the katpana cold desert. `
+    title: "Katpana Lake",
+    detail: `It is located just near the katpana cold desert.`
   },
   
   {
     type: "sightSeeing",
     img: sadpara,
-    title: "Sadpara Lake ",
-    detail: `Satpara sar Lake  is a natural lake near Skardu, Gilgit-Baltistan, Pakistan, which supplies water to Skardu Valley. It is fed by the Satpara Stream. Satpara Lake is situated at an elevation of 2,636 meters (8,650 ft.) above sea level and is spread over an area of 2.5 km² 
-
-    It approximately takes 50 minutes to reach there from Skardu city.  `
+    title: "Sadpara Lake",
+    detail: `Satpara sar Lake is a natural lake near Skardu, Gilgit Baltistan, Pakistan, which supplies water to Skardu Valley. It is fed by the Satpara Stream. Satpara Lake is situated at an elevation of 2,636 meters (8,650 ft.) above sea level and is spread over an area of 2.5 km² 
+It approximately takes 50 minutes to reach there from Skardu city.`
   },
   {
     type: "sightSeeing",
     img: shangrila,
-    title: "Shangrilla lake (Lower Kachura Lake) ",
-    detail: `Lower Kachura Lake also known as Shangrila Lake is located in Kachura village in Skardu city at a height of 2,500 metres (8,200 ft). The lake is also known as Shangrila lake after a resort built on its bank in 1983. Shangrila was established in 1983 with the opening of the first Resort Hotel in Skardu, Gilgit-Baltistan, Pakistan.  
+    title: "Shangrilla lake (Lower Kachura Lake)",
+    detail: `Lower Kachura Lake also known as Shangrila Lake is located in Kachura village in Skardu city at a height of 2,500 metres (8,200 ft). The lake is also known as Shangrila lake after a resort built on its bank in 1983. Shangrila was established in 1983 with the opening of the first Resort Hotel in Skardu, Gilgit Baltistan, Pakistan.  
 
     It approximately takes 30 minutes to reach there from Skardu city. `
   },
@@ -66,78 +65,67 @@ const CardsItems = [
     type: "sightSeeing",
     img: blind_lake,
     title: "Blind Lake ",
-    detail: `Zharba Tso or Blind lake is a Panoramic Lake near Shigar Valley, Shigar, Gilgit-Baltistan region in Pakistan. Zharba Lake uses as a water reservoir for the residents of Shigar Valley. It is fed by the Indus River.  The lake is on a way of Shigar Valley. The lake is surrounded by the Indus River on one side and Shigar River to another side 
-
-    It approximately takes 90 minutes to reach there from Skardu city. `
+    detail: `Zharba Tso or Blind lake is a Panoramic Lake near Shigar Valley, Shigar, Gilgit Baltistan region in Pakistan. Zharba Lake uses as a water reservoir for the residents of Shigar Valley. It is fed by the Indus River.  The lake is on a way of Shigar Valley. The lake is surrounded by the Indus River on one side and Shigar River to another side 
+It approximately takes 90 minutes to reach there from Skardu city. `
   },{
     type: "sightSeeing",
     img: khaplu_fort,
     title: "Khaplu Fort ",
-    detail: `Khaplu Palace locally known as Yabgo Khar (meaning "The fort of Doqsa"), is an old fort and palace located in Khaplu, in the Gilgit-Baltistan region of northern Pakistan. The palace, considered an architectural heritage and a tourist attraction, was built in the mid-19th century, replacing an earlier fort located nearby. It served as a royal residence for the Raja of Khaplu. 
-
-    It approximately takes 3 hours to reach there from Skardu city. `
+    detail: `Khaplu Palace locally known as Yabgo Khar (meaning "The fort of Doqsa"), is an old fort and palace located in Khaplu, in the Gilgit Baltistan region of northern Pakistan. The palace, considered an architectural heritage and a tourist attraction, was built in the mid-19th century, replacing an earlier fort located nearby. It served as a royal residence for the Raja of Khaplu. 
+It approximately takes 3 hours to reach there from Skardu city. `
   },
   {
     type: "sightSeeing",
     img: deosai,
     title: "Deosai National Park ",
-    detail: `The Deosai National Park is a high-altitude alpine plain (plateau) and national park in the Astore Valley, Northern Pakistan region of Gilgit-Baltistan. Deosai Plains are situated at an average elevation of 4,114 metres (13,497 ft) above sea level and considered as the second highest plateaus in the world. Deosai is located approximately 30 km from Skardu city, which is the shortest route to visit Deosai. 
+    detail: `The Deosai National Park is a high-altitude alpine plain (plateau) and national park in the Astore Valley, Northern Pakistan region of Gilgit Baltistan. Deosai Plains are situated at an average elevation of 4,114 metres (13,497 ft) above sea level and considered as the second highest plateaus in the world. Deosai is located approximately 30 km from Skardu city, which is the shortest route to visit Deosai. 
     It approximately takes 2 hours and 30 minutes to reach there from Skardu city.`
   },
   {
     type: "sightSeeing",
     img: chaqchan_mosque,
     title: "Chaqchan Mosque ",
-    detail: `The Chaqchan Mosque meaning “The Miraculous Mosque” is a mosque in the city of Khaplu, in the Gilgit-Baltistan region of northern Pakistan. Dating from 1370, the mosque is one of the oldest in the region, and dates from the time when the area's populace converted en masse from Buddhism to Islam. The mosque shares similar architecture as those built in the Kashmir Valley. It is a perfect blend of Tibetan, Mughal and Persian style of architecture. 
-
-    It approximately takes 3 hours to reach there from Skardu city. `
+    detail: `The Chaqchan Mosque meaning “The Miraculous Mosque” is a mosque in the city of Khaplu, in the Gilgit Baltistan region of northern Pakistan. Dating from 1370, the mosque is one of the oldest in the region, and dates from the time when the area's populace converted en masse from Buddhism to Islam. The mosque shares similar architecture as those built in the Kashmir Valley. It is a perfect blend of Tibetan, Mughal and Persian style of architecture. 
+It approximately takes 3 hours to reach there from Skardu city. `
   },{
     type: "sightSeeing",
     img: upper_kachura_lake,
     title: "Upper Kachura Lake ",
     detail: `Upper Kachura Lake is of clear water and has a depth of 70 metres (230 ft). In summer it has a temperature of 15 °C (59 °F).In winter the surface is frozen solid. The upper Indus River flows nearby at a lower elevation. 
-
-    The beauty of the Upper Kachura Lake is almost untampered and mostly unexplored by travelers, due to lack of infrastructure owing to its rough terrain The area has a rich flora of the Western Himalayan subalpine conifer forests ecoregion, and also known for its wild apricot - Prunus armeniaca orchards. Recreation activities at Upper Kachura Lake include hiking, trout fishing, and Himalaya mountaineering. 
-    
-    It approximately takes 30-35 minutes to reach there from Skardu city. `
+The beauty of the Upper Kachura Lake is almost untampered and mostly unexplored by travelers, due to lack of infrastructure owing to its rough terrain The area has a rich flora of the Western Himalayan subalpine conifer forests ecoregion, and also known for its wild apricot - Prunus armeniaca orchards. Recreation activities at Upper Kachura Lake include hiking, trout fishing, and Himalaya mountaineering. 
+It approximately takes 30-35 minutes to reach there from Skardu city. `
   },{
     type: "sightSeeing",
     img: katpana_desert,
     title: "Katpana Cold Desert ",
     detail: `The Cold Desert, also known as the Katpana Desert or Biama Nakpo is a high-altitude desert located near Skardu, Gilgit−Baltistan, Pakistan. The desert contains large sand dunes that are sometimes covered in snow during winter. Situated at an elevation of 2,226 metres (7,303 ft.) above sea level, the Cold Desert is one of the highest deserts in the world. While the desert technically stretches from the Khaplu Valley to Nubra in Indian-administered Ladakh, the largest desert area proper is found in Skardu and Shigar Valley, both within Pakistani-administered territory. The portion of the desert that is most frequented by tourists is located near the Skardu Airport. 
-
-    It approximately takes 31 minutes to reach there from Skardu city. `
+  It approximately takes 31 minutes to reach there from Skardu city. `
   },
   {
     type: "sightSeeing",
     img: manthoka_waterfall,
     title: "Manthokha Waterfall",
-    detail: `Manthokha Waterfall is a waterfall located in Kharmang Valley, Skardu, Gilgit-Baltistan, the extreme northern region of Pakistan. This waterfall is approx 180 feet high from ground, and located almost 80 kilometres (50 mi) away from downtown Skardu. The waterfall is a mystic place featuring lush green pastures, fresh gurgling streams, towering Rocky Mountains of Karakorum and indigenously designed restaurants and much more. The main highlight of the restaurant is the local trout fish, apart from the waterfall another worthy feat is the fish farm where trout fishes are kept for the sightseers. 
-
-    It approximately takes 2 hours to reach there from Skardu city. `
+    detail: `Manthokha Waterfall is a waterfall located in Kharmang Valley, Skardu, Gilgit Baltistan, the extreme northern region of Pakistan. This waterfall is approx 180 feet high from ground, and located almost 80 kilometres (50 mi) away from downtown Skardu. The waterfall is a mystic place featuring lush green pastures, fresh gurgling streams, towering Rocky Mountains of Karakorum and indigenously designed restaurants and much more. The main highlight of the restaurant is the local trout fish, apart from the waterfall another worthy feat is the fish farm where trout fishes are kept for the sightseers. 
+  It approximately takes 2 hours to reach there from Skardu city. `
   },
   {
     type: "sightSeeing",
     img: chunda_valley,
     title: "Chunda Valley ",
     detail: `Chunda Valley is a spectacular and breathtaking valley in Skardu city only at a short distance of about one hour drive from the downtown, Yadgar Chowk Skardu. 
-
-    This valley is located at a raised ground which provides a pleasing view in summer by its green carpeted and lush green farms and fields. The valley is famous for different kind of fruits, especially for the seedless raisins. The valley is totally self-sustained because its fertile land allows the inhabitant to grow a different kind of cereals and fruits. 
-    
-    It approximately takes 60 minutes to reach there from Skardu city `
+   This valley is located at a raised ground which provides a pleasing view in summer by its green carpeted and lush green farms and fields. The valley is famous for different kind of fruits, especially for the seedless raisins. The valley is totally self-sustained because its fertile land allows the inhabitant to grow a different kind of cereals and fruits. 
+   It approximately takes 60 minutes to reach there from Skardu city `
   },{
     type: "sightSeeing",
     img: shigar_fort,
     title: "Shigar Fort (Serena Shigar) ",
     detail: `The Shigar Fort  means The Fort on Rock  is an old fort of Baltistan  located in the town of Shigar. It was built in the 17th century by the Raja of Amacha Dynasty of Shigar. The fort has been restored by Aga Khan Cultural Service Pakistan (AKCSP-P), the Pakistan arm of the Aga Khan Historic Cities Programme. After restoration, the Fort was converted to a museum and luxury hotel managed by Serena Hotels. The restoration process took place from 1999 to 2004 and cost approximately US$1.4 million 
-
     It approximately takes 60 minutes to reach there from Skardu city `
   },{
     type: "sightSeeing",
     img: fish_farm,
     title: "Sailing Trout Fish Farm Khaplu ",
-    detail: `Sailing Valley Khaplu is a beautiful valley in the Ghanche District, Khaplu Gilgit-Baltistan. Saling is a doorway to Hushe Valley as well as a very nice camping spot just beside a lake. On the other side is a marvelous view of Khaplu Town. There is a wonderful fish farm in Saling that offers delicious fish feasts. That is also a picnic point in Sailing valley. Many springs are also present in the fish farm. A hot spring is in this area which is good for bathing in the winters as well as. The water of this spring is hot in winters and cold in summers. 
-
+    detail: `Sailing Valley Khaplu is a beautiful valley in the Ghanche District, Khaplu Gilgit Baltistan. Saling is a doorway to Hushe Valley as well as a very nice camping spot just beside a lake. On the other side is a marvelous view of Khaplu Town. There is a wonderful fish farm in Saling that offers delicious fish feasts. That is also a picnic point in Sailing valley. Many springs are also present in the fish farm. A hot spring is in this area which is good for bathing in the winters as well as. The water of this spring is hot in winters and cold in summers. 
     It approximately takes 3 hours to reach there from Skardu city. `
   },
   
@@ -223,7 +211,7 @@ const CardsItems = [
     type: "hiking",
     img: kharpocho,
     title: "Kharpocho Fort Skardu",
-    detail: `Skardu Fort or Kharpocho “The king of Forts” is a fort located at Skardu city Gilgit-Baltistan. It’s a very nice place to visit and is located near the main bazar of the Skardu City. It’s a trekking place and nearly take 25-30 minutes to reach at the top depending upon your health do not forget to put water bottles in your bag because no facilities available there. This place is not suitable for you if you've children or family.  `,
+    detail: `Skardu Fort or Kharpocho “The king of Forts” is a fort located at Skardu city Gilgit Baltistan. It’s a very nice place to visit and is located near the main bazar of the Skardu City. It’s a trekking place and nearly take 25-30 minutes to reach at the top depending upon your health do not forget to put water bottles in your bag because no facilities available there. This place is not suitable for you if you've children or family.  `,
   },
   {
     type: "hiking",

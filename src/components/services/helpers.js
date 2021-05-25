@@ -158,13 +158,13 @@ const CardsItems = [
     type: "trips",
     img: CorporateTrip,
     title: "Corporate Trip",
-    detail: `Our corporate travel team is a specialist for business travel. Most importantly, our team understands the nature of corporate tours and meetings and hence we handle the details of our clients with a high level of confidentiality. Here are some key reasons which set us apart from the competition:,
-    Our experience outshines the rest!`
-    `Our corporate travel team is available round the clock to serve the travel and tour needs of our esteemed clients.`
-    `We will arrange certain number of activities to bring out talent e.g. ski diving, quad safari, jeep safari etc.`
-    `We will provide the opportunity to interact with different local companies.`
-    `We will arrange corporate conference.`
-    `We are giving opportunities to the students of universities to work with us.`
+    detail: `Our corporate travel team is a specialist for business travel. Most importantly, our team understands the nature of corporate tours and meetings and hence we handle the details of our clients with a high level of confidentiality. Here are some key reasons which set us apart from the competition:
+    Our experience outshines the rest!
+    Our corporate travel team is available round the clock to serve the travel and tour needs of our esteemed clients.
+    We will arrange certain number of activities to bring out talent e.g. ski diving, quad safari, jeep safari etc.
+    We will provide the opportunity to interact with different local companies.
+    We will arrange corporate conference.
+    We are giving opportunities to the students of universities to work with us.`
   },
   {
     type: "trips",
